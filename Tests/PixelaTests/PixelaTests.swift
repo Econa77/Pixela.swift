@@ -3,12 +3,7 @@ import XCTest
 
 final class PixelaTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(Pixela().text, "Hello, World!")
     }
-
     static var allTests = [
         ("testExample", testExample),
     ]
