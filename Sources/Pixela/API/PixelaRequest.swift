@@ -15,7 +15,7 @@ extension PixelaRequest {
         return DecodableDataParser()
     }
     var baseURL: URL {
-        return URL(string: "https://pixe.la")!
+        return URL(string: PixelaAPI.baseURLString)!
     }
 }
 

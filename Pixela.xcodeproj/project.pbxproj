@@ -32,6 +32,14 @@
 		FAB4637B241BC4F1008362C3 /* ChannelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4637A241BC4F1008362C3 /* ChannelType.swift */; };
 		FAB4637D241BC566008362C3 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4637C241BC566008362C3 /* Channel.swift */; };
 		FAB4637F241BC784008362C3 /* NotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4637E241BC784008362C3 /* NotificationType.swift */; };
+		FAB46381241BD07B008362C3 /* GraphsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46380241BD07B008362C3 /* GraphsRequest.swift */; };
+		FAB46383241BD0E6008362C3 /* GraphType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46382241BD0E6008362C3 /* GraphType.swift */; };
+		FAB46385241BD111008362C3 /* GraphColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46384241BD111008362C3 /* GraphColor.swift */; };
+		FAB46387241BD1F0008362C3 /* GraphSelfSufficient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46386241BD1F0008362C3 /* GraphSelfSufficient.swift */; };
+		FAB46389241BD257008362C3 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46388241BD257008362C3 /* Graph.swift */; };
+		FAB4638B241BDA97008362C3 /* GraphMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4638A241BDA97008362C3 /* GraphMode.swift */; };
+		FAB4638E241BDC53008362C3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4638D241BDC53008362C3 /* DateExtension.swift */; };
+		FAB46390241BE3EA008362C3 /* GraphStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4638F241BE3EA008362C3 /* GraphStatistics.swift */; };
 		OBJ_101 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_112 /* PixelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* PixelaTests.swift */; };
 		OBJ_113 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* XCTestManifests.swift */; };
@@ -109,6 +117,14 @@
 		FAB4637A241BC4F1008362C3 /* ChannelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelType.swift; sourceTree = "<group>"; };
 		FAB4637C241BC566008362C3 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		FAB4637E241BC784008362C3 /* NotificationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationType.swift; sourceTree = "<group>"; };
+		FAB46380241BD07B008362C3 /* GraphsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsRequest.swift; sourceTree = "<group>"; };
+		FAB46382241BD0E6008362C3 /* GraphType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphType.swift; sourceTree = "<group>"; };
+		FAB46384241BD111008362C3 /* GraphColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphColor.swift; sourceTree = "<group>"; };
+		FAB46386241BD1F0008362C3 /* GraphSelfSufficient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSelfSufficient.swift; sourceTree = "<group>"; };
+		FAB46388241BD257008362C3 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		FAB4638A241BDA97008362C3 /* GraphMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphMode.swift; sourceTree = "<group>"; };
+		FAB4638D241BDC53008362C3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		FAB4638F241BE3EA008362C3 /* GraphStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphStatistics.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Pixela.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixela.swift; sourceTree = "<group>"; };
 		OBJ_13 /* PixelaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelaTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
@@ -188,6 +204,7 @@
 			children = (
 				FAB46371241B8EDA008362C3 /* UsersRequest.swift */,
 				FAB46378241BC3B4008362C3 /* ChannelsRequest.swift */,
+				FAB46380241BD07B008362C3 /* GraphsRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -199,8 +216,22 @@
 				FAB4637C241BC566008362C3 /* Channel.swift */,
 				FAB4637E241BC784008362C3 /* NotificationType.swift */,
 				FAB4637A241BC4F1008362C3 /* ChannelType.swift */,
+				FAB46388241BD257008362C3 /* Graph.swift */,
+				FAB46382241BD0E6008362C3 /* GraphType.swift */,
+				FAB46384241BD111008362C3 /* GraphColor.swift */,
+				FAB46386241BD1F0008362C3 /* GraphSelfSufficient.swift */,
+				FAB4638A241BDA97008362C3 /* GraphMode.swift */,
+				FAB4638F241BE3EA008362C3 /* GraphStatistics.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		FAB4638C241BDC4A008362C3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAB4638D241BDC53008362C3 /* DateExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		OBJ_11 /* Tests */ = {
@@ -345,6 +376,7 @@
 			children = (
 				FAB46364241B81FE008362C3 /* API */,
 				FAB46373241B9274008362C3 /* Entities */,
+				FAB4638C241BDC4A008362C3 /* Extensions */,
 				OBJ_9 /* Configuration.swift */,
 				OBJ_10 /* Pixela.swift */,
 				FAB46368241B82A9008362C3 /* PixelaError.swift */,
@@ -526,16 +558,24 @@
 			buildActionMask = 0;
 			files = (
 				FAB46372241B8EDA008362C3 /* UsersRequest.swift in Sources */,
+				FAB4638E241BDC53008362C3 /* DateExtension.swift in Sources */,
 				FAB4637D241BC566008362C3 /* Channel.swift in Sources */,
+				FAB46381241BD07B008362C3 /* GraphsRequest.swift in Sources */,
+				FAB4638B241BDA97008362C3 /* GraphMode.swift in Sources */,
+				FAB46387241BD1F0008362C3 /* GraphSelfSufficient.swift in Sources */,
 				FAB46369241B82A9008362C3 /* PixelaError.swift in Sources */,
 				FAB46377241B92B0008362C3 /* ErrorMessage.swift in Sources */,
+				FAB46389241BD257008362C3 /* Graph.swift in Sources */,
 				OBJ_91 /* Configuration.swift in Sources */,
 				FAB4637F241BC784008362C3 /* NotificationType.swift in Sources */,
 				FAB4637B241BC4F1008362C3 /* ChannelType.swift in Sources */,
 				FAB46367241B821A008362C3 /* PixelaRequest.swift in Sources */,
+				FAB46390241BE3EA008362C3 /* GraphStatistics.swift in Sources */,
 				FAB46379241BC3B4008362C3 /* ChannelsRequest.swift in Sources */,
 				OBJ_92 /* Pixela.swift in Sources */,
 				FAB4636F241B8A60008362C3 /* PixelaAPI.swift in Sources */,
+				FAB46385241BD111008362C3 /* GraphColor.swift in Sources */,
+				FAB46383241BD0E6008362C3 /* GraphType.swift in Sources */,
 				FAB4636B241B82C1008362C3 /* DecodableDataParser.swift in Sources */,
 				FAB4636D241B8593008362C3 /* APIClient.swift in Sources */,
 			);

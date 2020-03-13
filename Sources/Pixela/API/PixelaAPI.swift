@@ -8,3 +8,7 @@
 import Foundation
 
 struct PixelaAPI {}
+
+extension PixelaAPI {
+    static let baseURLString: String = "https://pixe.la"
+}
