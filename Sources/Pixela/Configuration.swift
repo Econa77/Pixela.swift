@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Configuration: Codable {
+public struct Configuration {
 
     // MARK: - Properties
     public let username: String

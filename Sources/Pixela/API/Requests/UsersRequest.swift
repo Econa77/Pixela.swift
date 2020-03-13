@@ -45,8 +45,7 @@ extension PixelaAPI {
     struct UpdateUserRequest: PixelaRequest {
 
         // MARK: - Properties
-        let token: String
-        let username: String
+        let configuration: Configuration
         let newToken: String?
         let thanksCode: String?
 
@@ -55,7 +54,7 @@ extension PixelaAPI {
 
         let method: HTTPMethod = .put
         var path: String {
-            return "/v1/users/\(username)"
+            return "/v1/users/\(configuration.username)"
         }
         var parameters: Any? {
             var params = [String: Any]()
@@ -64,11 +63,11 @@ extension PixelaAPI {
             return params
         }
         var headerFields: [String : String] {
-            return ["X-USER-TOKEN": token]
+            return ["X-USER-TOKEN": configuration.token]
         }
 
         func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Configuration {
-            return Configuration(username: username, token: newToken ?? token)
+            return Configuration(username: configuration.username, token: newToken ?? configuration.token)
         }
 
     }
@@ -77,18 +76,17 @@ extension PixelaAPI {
     struct DeleteUserRequest: PixelaRequest {
 
         // MARK: - Properties
-        let token: String
-        let username: String
+        let configuration: Configuration
 
         // MARK: - Response Type
         typealias Response = Void
 
         let method: HTTPMethod = .delete
         var path: String {
-            return "/v1/users/\(username)"
+            return "/v1/users/\(configuration.username)"
         }
         var headerFields: [String : String] {
-            return ["X-USER-TOKEN": token]
+            return ["X-USER-TOKEN": configuration.token]
         }
 
     }

@@ -46,13 +46,47 @@ public extension Pixela {
 
     func updateUser(newToken: String, thanksCode: String?, completion: @escaping ((Result<Configuration, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
-        let request = PixelaAPI.UpdateUserRequest(token: configuration.token, username: configuration.username, newToken: newToken, thanksCode: thanksCode)
+        let request = PixelaAPI.UpdateUserRequest(configuration: configuration, newToken: newToken, thanksCode: thanksCode)
         apiClient.send(request, completion: completion)
     }
 
     func deleteUser(completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
-        let request = PixelaAPI.DeleteUserRequest(token: configuration.token, username: configuration.username)
+        let request = PixelaAPI.DeleteUserRequest(configuration: configuration)
+        apiClient.send(request, completion: completion)
+    }
+}
+
+// MARK: - Channels Request
+public extension Pixela {
+    func createChannel(id: String, name: String, type: ChannelType, completion: @escaping ((Result<Channel, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.CreateChannelRequest(configuration: configuration, id: id, name: name, type: type)
+        apiClient.send(request, completion: completion)
+    }
+
+    func getChannels(completion: @escaping ((Result<[Channel], PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.GetChannelsRequest(configuration: configuration)
+        apiClient.send(request) { result in
+            switch result {
+            case let .success(response):
+                completion(.success(response.channels))
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    func updateChannel(id: String, name: String?, type: ChannelType?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.UpdateChannelRequest(configuration: configuration, id: id, name: name, type: type)
+        apiClient.send(request, completion: completion)
+    }
+
+    func deleteChannel(id: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.DeleteChannelRequest(configuration: configuration, id: id)
         apiClient.send(request, completion: completion)
     }
 }
