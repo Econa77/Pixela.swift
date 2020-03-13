@@ -251,3 +251,44 @@ public extension Pixela {
         apiClient.send(request, completion: completion)
     }
 }
+
+// MARK: - Webhooks Request
+public extension Pixela {
+    func createWebhook(graphID: String, type: WebhookType, completion: @escaping ((Result<Webhook, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.CreateWebhookRequest(configuration: configuration, graphID: graphID, type: type)
+        apiClient.send(request) { result in
+            switch result {
+            case let .success(response):
+                completion(.success(Webhook(webhookHash: response.webhookHash, graphID: graphID, type: type)))
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    func getWebhooks(completion: @escaping ((Result<[Webhook], PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.GetWebhooksRequest(configuration: configuration)
+        apiClient.send(request) { result in
+            switch result {
+            case let .success(response):
+                completion(.success(response.webhooks))
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    func invokeWebhook(webhookHash: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.InvokeWebhookRequest(configuration: configuration, webhookHash: webhookHash)
+        apiClient.send(request, completion: completion)
+    }
+
+    func deleteWebhook(webhookHash: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.DeleteWebhookRequest(configuration: configuration, webhookHash: webhookHash)
+        apiClient.send(request, completion: completion)
+    }
+}
