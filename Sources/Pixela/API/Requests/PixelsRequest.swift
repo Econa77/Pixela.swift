@@ -31,7 +31,9 @@ extension PixelaAPI {
             var params = [String: Any]()
             params["date"] = date.formatString()
             params["quantity"] = quantity
-            params["optionalData"] = optionalData
+            if let optinalData = self.optionalData, let jsonData = try? JSONSerialization.data(withJSONObject: optinalData, options: []) {
+                params["optionalData"] = String(data: jsonData, encoding: .utf8)
+            }
             return params
         }
         var headerFields: [String : String] {
@@ -39,7 +41,10 @@ extension PixelaAPI {
         }
 
         func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Pixel {
-            return Pixel(quantity: quantity, optionalData: Pixel.OptionalData(items: optionalData))
+            if let optinalData = self.optionalData, let jsonData = try? JSONSerialization.data(withJSONObject: optinalData, options: []) {
+                return Pixel(quantity: quantity, optionalData: String(data: jsonData, encoding: .utf8))
+            }
+            return Pixel(quantity: quantity, optionalData: nil)
         }
 
     }
@@ -85,7 +90,9 @@ extension PixelaAPI {
         var parameters: Any? {
             var params = [String: Any]()
             params["quantity"] = quantity
-            params["optionalData"] = optionalData
+            if let optinalData = self.optionalData, let jsonData = try? JSONSerialization.data(withJSONObject: optinalData, options: []) {
+                params["optionalData"] = String(data: jsonData, encoding: .utf8)
+            }
             return params
         }
         var headerFields: [String : String] {

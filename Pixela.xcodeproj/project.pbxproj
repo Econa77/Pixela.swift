@@ -35,7 +35,6 @@
 		FAB4638E241BDC53008362C3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4638D241BDC53008362C3 /* DateExtension.swift */; };
 		FAB46392241BE513008362C3 /* PixelsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46391241BE513008362C3 /* PixelsRequest.swift */; };
 		FAB46394241BE5A2008362C3 /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46393241BE5A2008362C3 /* Pixel.swift */; };
-		FAB46397241BE851008362C3 /* AnyCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46396241BE851008362C3 /* AnyCodingKeys.swift */; };
 		FAB46399241BEE11008362C3 /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB46398241BEE11008362C3 /* NotificationsRequest.swift */; };
 		FAB4639F241BEF2F008362C3 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB4639E241BEF2F008362C3 /* Notification.swift */; };
 		FAB463A1241BF57E008362C3 /* Webhook.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB463A0241BF57E008362C3 /* Webhook.swift */; };
@@ -120,7 +119,6 @@
 		FAB4638D241BDC53008362C3 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		FAB46391241BE513008362C3 /* PixelsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelsRequest.swift; sourceTree = "<group>"; };
 		FAB46393241BE5A2008362C3 /* Pixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
-		FAB46396241BE851008362C3 /* AnyCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodingKeys.swift; sourceTree = "<group>"; };
 		FAB46398241BEE11008362C3 /* NotificationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
 		FAB4639E241BEF2F008362C3 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		FAB463A0241BF57E008362C3 /* Webhook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webhook.swift; sourceTree = "<group>"; };
@@ -231,14 +229,6 @@
 				FAB4638D241BDC53008362C3 /* DateExtension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		FAB46395241BE80A008362C3 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				FAB46396241BE851008362C3 /* AnyCodingKeys.swift */,
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		OBJ_11 /* Tests */ = {
@@ -382,7 +372,6 @@
 			isa = PBXGroup;
 			children = (
 				FAB46364241B81FE008362C3 /* API */,
-				FAB46395241BE80A008362C3 /* Utils */,
 				FAB46373241B9274008362C3 /* Entities */,
 				FAB4638C241BDC4A008362C3 /* Extensions */,
 				OBJ_9 /* Configuration.swift */,
@@ -570,7 +559,6 @@
 				FAB4637D241BC566008362C3 /* Channel.swift in Sources */,
 				FAB46381241BD07B008362C3 /* GraphsRequest.swift in Sources */,
 				FAB46399241BEE11008362C3 /* NotificationsRequest.swift in Sources */,
-				FAB46397241BE851008362C3 /* AnyCodingKeys.swift in Sources */,
 				FAB46369241B82A9008362C3 /* PixelaError.swift in Sources */,
 				FAB46377241B92B0008362C3 /* ErrorMessage.swift in Sources */,
 				FAB46389241BD257008362C3 /* Graph.swift in Sources */,
