@@ -36,3 +36,11 @@ public final class Pixela {
     }
 
 }
+
+// MARK: - Users Request
+public extension Pixela {
+    func createUser(token: String, username: String, isAgreeTermsOfService: Bool, isNotMinor: Bool, thanksCode: String?, completion: @escaping (Result<Configuration, PixelaError>) -> Void) {
+        let request = PixelaAPI.CreateUserRequest(token: token, username: username, isAgreeTermsOfService: isAgreeTermsOfService, isNotMinor: isNotMinor, thanksCode: thanksCode)
+        apiClient.send(request, completion: completion)
+    }
+}

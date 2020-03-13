@@ -15,6 +15,6 @@ public enum PixelaError: Error {
 
 public enum ResponseErrorReason {
     case dataParsingFailed(Any, Error?, Int)
-    case unacceptableStatusCode(Any, Int)
+    case unacceptableStatusCode(Any, ErrorMessage?, Int)
     case invalidError(Error)
 }
