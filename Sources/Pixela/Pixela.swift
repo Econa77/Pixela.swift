@@ -10,15 +10,24 @@ import APIKit
 public final class Pixela {
 
     // MARK: - Properties
-    private let username: String
-    private let token: String
+    public static var shared: Pixela = {
+        return Pixela(configuration: nil)
+    }()
+
+    public var configuration: Configuration?
     private let session: APIKit.Session
 
     // MARK: - Initialize
-    public init(username: String, token: String, session: APIKit.Session = .shared) {
-        self.username = username
-        self.token = token
+    init(configuration: Configuration?, session: APIKit.Session = .shared) {
+        self.configuration = configuration
         self.session = session
+    }
+
+    private func fetchConfiguration() -> Configuration {
+        guard let configuration = self.configuration else {
+            fatalError("[Pixela.swift] Must set the Pixela.shared.configuration before use.")
+        }
+        return configuration
     }
 
 }

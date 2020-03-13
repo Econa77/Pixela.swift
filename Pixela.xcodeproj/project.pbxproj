@@ -1,828 +1,1126 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXAggregateTarget section */
-		"Pixela::PixelaPackageTests::ProductTarget" /* PixelaPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_101 /* Build configuration list for PBXAggregateTarget "PixelaPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_104 /* PBXTargetDependency */,
-			);
-			name = PixelaPackageTests;
-			productName = PixelaPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		OBJ_110 /* PixelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* PixelaTests.swift */; };
-		OBJ_111 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
-		OBJ_113 /* Pixela.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Pixela::Pixela::Product" /* Pixela.framework */; };
-		OBJ_114 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "APIKit::APIKit::Product" /* APIKit.framework */; };
-		OBJ_56 /* BodyParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* BodyParameters.swift */; };
-		OBJ_57 /* Data+InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Data+InputStream.swift */; };
-		OBJ_58 /* FormURLEncodedBodyParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* FormURLEncodedBodyParameters.swift */; };
-		OBJ_59 /* JSONBodyParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* JSONBodyParameters.swift */; };
-		OBJ_60 /* MultipartFormDataBodyParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MultipartFormDataBodyParameters.swift */; };
-		OBJ_61 /* ProtobufBodyParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* ProtobufBodyParameters.swift */; };
-		OBJ_62 /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* CallbackQueue.swift */; };
-		OBJ_63 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* DataParser.swift */; };
-		OBJ_64 /* FormURLEncodedDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* FormURLEncodedDataParser.swift */; };
-		OBJ_65 /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* JSONDataParser.swift */; };
-		OBJ_66 /* ProtobufDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ProtobufDataParser.swift */; };
-		OBJ_67 /* StringDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* StringDataParser.swift */; };
-		OBJ_68 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* RequestError.swift */; };
-		OBJ_69 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ResponseError.swift */; };
-		OBJ_70 /* SessionTaskError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* SessionTaskError.swift */; };
-		OBJ_71 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* HTTPMethod.swift */; };
-		OBJ_72 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Request.swift */; };
-		OBJ_73 /* URLEncodedSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* URLEncodedSerialization.swift */; };
-		OBJ_74 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Session.swift */; };
-		OBJ_75 /* SessionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* SessionAdapter.swift */; };
-		OBJ_76 /* URLSessionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* URLSessionAdapter.swift */; };
-		OBJ_77 /* Unavailable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Unavailable.swift */; };
-		OBJ_84 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Package.swift */; };
-		OBJ_90 /* Pixela.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Pixela.swift */; };
-		OBJ_92 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "APIKit::APIKit::Product" /* APIKit.framework */; };
-		OBJ_99 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		09929E0923C712F500C2CF65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "APIKit::APIKit";
-			remoteInfo = APIKit;
-		};
-		09929E0A23C712F700C2CF65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Pixela::Pixela";
-			remoteInfo = Pixela;
-		};
-		09929E0B23C712F700C2CF65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "APIKit::APIKit";
-			remoteInfo = APIKit;
-		};
-		09929E0C23C712F900C2CF65 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Pixela::PixelaTests";
-			remoteInfo = PixelaTests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		"APIKit::APIKit::Product" /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* PixelaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelaTests.swift; sourceTree = "<group>"; };
-		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_18 /* BodyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParameters.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Data+InputStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+InputStream.swift"; sourceTree = "<group>"; };
-		OBJ_20 /* FormURLEncodedBodyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormURLEncodedBodyParameters.swift; sourceTree = "<group>"; };
-		OBJ_21 /* JSONBodyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBodyParameters.swift; sourceTree = "<group>"; };
-		OBJ_22 /* MultipartFormDataBodyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormDataBodyParameters.swift; sourceTree = "<group>"; };
-		OBJ_23 /* ProtobufBodyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtobufBodyParameters.swift; sourceTree = "<group>"; };
-		OBJ_24 /* CallbackQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackQueue.swift; sourceTree = "<group>"; };
-		OBJ_26 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
-		OBJ_27 /* FormURLEncodedDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormURLEncodedDataParser.swift; sourceTree = "<group>"; };
-		OBJ_28 /* JSONDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataParser.swift; sourceTree = "<group>"; };
-		OBJ_29 /* ProtobufDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtobufDataParser.swift; sourceTree = "<group>"; };
-		OBJ_30 /* StringDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataParser.swift; sourceTree = "<group>"; };
-		OBJ_32 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
-		OBJ_33 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
-		OBJ_34 /* SessionTaskError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTaskError.swift; sourceTree = "<group>"; };
-		OBJ_35 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		OBJ_36 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_38 /* URLEncodedSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedSerialization.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		OBJ_41 /* SessionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAdapter.swift; sourceTree = "<group>"; };
-		OBJ_42 /* URLSessionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAdapter.swift; sourceTree = "<group>"; };
-		OBJ_43 /* Unavailable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unavailable.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/shunsuke_furubayasi/Git/Swift/Pixela.swift/.build/checkouts/APIKit/Package.swift; sourceTree = "<group>"; };
-		OBJ_49 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		OBJ_50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* Pixela.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixela.swift; sourceTree = "<group>"; };
-		"Pixela::Pixela::Product" /* Pixela.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixela.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Pixela::PixelaTests::Product" /* PixelaTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		OBJ_112 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_113 /* Pixela.framework in Frameworks */,
-				OBJ_114 /* APIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_78 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_91 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_92 /* APIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		OBJ_10 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_11 /* PixelaTests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_11 /* PixelaTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* PixelaTests.swift */,
-				OBJ_13 /* XCTestManifests.swift */,
-			);
-			name = PixelaTests;
-			path = Tests/PixelaTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_14 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_15 /* APIKit 5.1.0 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_15 /* APIKit 5.1.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_16 /* APIKit */,
-				OBJ_44 /* Package.swift */,
-			);
-			name = "APIKit 5.1.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_16 /* APIKit */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_17 /* BodyParameters */,
-				OBJ_24 /* CallbackQueue.swift */,
-				OBJ_25 /* DataParser */,
-				OBJ_31 /* Error */,
-				OBJ_35 /* HTTPMethod.swift */,
-				OBJ_36 /* Request.swift */,
-				OBJ_37 /* Serializations */,
-				OBJ_39 /* Session.swift */,
-				OBJ_40 /* SessionAdapter */,
-				OBJ_43 /* Unavailable.swift */,
-			);
-			name = APIKit;
-			path = .build/checkouts/APIKit/Sources/APIKit;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_17 /* BodyParameters */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_18 /* BodyParameters.swift */,
-				OBJ_19 /* Data+InputStream.swift */,
-				OBJ_20 /* FormURLEncodedBodyParameters.swift */,
-				OBJ_21 /* JSONBodyParameters.swift */,
-				OBJ_22 /* MultipartFormDataBodyParameters.swift */,
-				OBJ_23 /* ProtobufBodyParameters.swift */,
-			);
-			path = BodyParameters;
-			sourceTree = "<group>";
-		};
-		OBJ_25 /* DataParser */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_26 /* DataParser.swift */,
-				OBJ_27 /* FormURLEncodedDataParser.swift */,
-				OBJ_28 /* JSONDataParser.swift */,
-				OBJ_29 /* ProtobufDataParser.swift */,
-				OBJ_30 /* StringDataParser.swift */,
-			);
-			path = DataParser;
-			sourceTree = "<group>";
-		};
-		OBJ_31 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_32 /* RequestError.swift */,
-				OBJ_33 /* ResponseError.swift */,
-				OBJ_34 /* SessionTaskError.swift */,
-			);
-			path = Error;
-			sourceTree = "<group>";
-		};
-		OBJ_37 /* Serializations */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_38 /* URLEncodedSerialization.swift */,
-			);
-			path = Serializations;
-			sourceTree = "<group>";
-		};
-		OBJ_40 /* SessionAdapter */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_41 /* SessionAdapter.swift */,
-				OBJ_42 /* URLSessionAdapter.swift */,
-			);
-			path = SessionAdapter;
-			sourceTree = "<group>";
-		};
-		OBJ_45 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Pixela::Pixela::Product" /* Pixela.framework */,
-				"APIKit::APIKit::Product" /* APIKit.framework */,
-				"Pixela::PixelaTests::Product" /* PixelaTests.xctest */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_5 /*  */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_10 /* Tests */,
-				OBJ_14 /* Dependencies */,
-				OBJ_45 /* Products */,
-				OBJ_49 /* LICENSE */,
-				OBJ_50 /* README.md */,
-			);
-			name = "";
-			sourceTree = "<group>";
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* Pixela */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* Pixela */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* Pixela.swift */,
-			);
-			name = Pixela;
-			path = Sources/Pixela;
-			sourceTree = SOURCE_ROOT;
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		"APIKit::APIKit" /* APIKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_52 /* Build configuration list for PBXNativeTarget "APIKit" */;
-			buildPhases = (
-				OBJ_55 /* Sources */,
-				OBJ_78 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = APIKit;
-			productName = APIKit;
-			productReference = "APIKit::APIKit::Product" /* APIKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"APIKit::SwiftPMPackageDescription" /* APIKitPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_80 /* Build configuration list for PBXNativeTarget "APIKitPackageDescription" */;
-			buildPhases = (
-				OBJ_83 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = APIKitPackageDescription;
-			productName = APIKitPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"Pixela::Pixela" /* Pixela */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_86 /* Build configuration list for PBXNativeTarget "Pixela" */;
-			buildPhases = (
-				OBJ_89 /* Sources */,
-				OBJ_91 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_93 /* PBXTargetDependency */,
-			);
-			name = Pixela;
-			productName = Pixela;
-			productReference = "Pixela::Pixela::Product" /* Pixela.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Pixela::PixelaTests" /* PixelaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_106 /* Build configuration list for PBXNativeTarget "PixelaTests" */;
-			buildPhases = (
-				OBJ_109 /* Sources */,
-				OBJ_112 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_115 /* PBXTargetDependency */,
-				OBJ_116 /* PBXTargetDependency */,
-			);
-			name = PixelaTests;
-			productName = PixelaTests;
-			productReference = "Pixela::PixelaTests::Product" /* PixelaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"Pixela::SwiftPMPackageDescription" /* PixelaPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_95 /* Build configuration list for PBXNativeTarget "PixelaPackageDescription" */;
-			buildPhases = (
-				OBJ_98 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PixelaPackageDescription;
-			productName = PixelaPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftMigration = 9999;
-				LastUpgradeCheck = 9999;
-			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Pixela" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_45 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				"APIKit::APIKit" /* APIKit */,
-				"APIKit::SwiftPMPackageDescription" /* APIKitPackageDescription */,
-				"Pixela::Pixela" /* Pixela */,
-				"Pixela::SwiftPMPackageDescription" /* PixelaPackageDescription */,
-				"Pixela::PixelaPackageTests::ProductTarget" /* PixelaPackageTests */,
-				"Pixela::PixelaTests" /* PixelaTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		OBJ_109 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_110 /* PixelaTests.swift in Sources */,
-				OBJ_111 /* XCTestManifests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_55 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_56 /* BodyParameters.swift in Sources */,
-				OBJ_57 /* Data+InputStream.swift in Sources */,
-				OBJ_58 /* FormURLEncodedBodyParameters.swift in Sources */,
-				OBJ_59 /* JSONBodyParameters.swift in Sources */,
-				OBJ_60 /* MultipartFormDataBodyParameters.swift in Sources */,
-				OBJ_61 /* ProtobufBodyParameters.swift in Sources */,
-				OBJ_62 /* CallbackQueue.swift in Sources */,
-				OBJ_63 /* DataParser.swift in Sources */,
-				OBJ_64 /* FormURLEncodedDataParser.swift in Sources */,
-				OBJ_65 /* JSONDataParser.swift in Sources */,
-				OBJ_66 /* ProtobufDataParser.swift in Sources */,
-				OBJ_67 /* StringDataParser.swift in Sources */,
-				OBJ_68 /* RequestError.swift in Sources */,
-				OBJ_69 /* ResponseError.swift in Sources */,
-				OBJ_70 /* SessionTaskError.swift in Sources */,
-				OBJ_71 /* HTTPMethod.swift in Sources */,
-				OBJ_72 /* Request.swift in Sources */,
-				OBJ_73 /* URLEncodedSerialization.swift in Sources */,
-				OBJ_74 /* Session.swift in Sources */,
-				OBJ_75 /* SessionAdapter.swift in Sources */,
-				OBJ_76 /* URLSessionAdapter.swift in Sources */,
-				OBJ_77 /* Unavailable.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_83 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_84 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_89 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_90 /* Pixela.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_98 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_99 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_104 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Pixela::PixelaTests" /* PixelaTests */;
-			targetProxy = 09929E0C23C712F900C2CF65 /* PBXContainerItemProxy */;
-		};
-		OBJ_115 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Pixela::Pixela" /* Pixela */;
-			targetProxy = 09929E0A23C712F700C2CF65 /* PBXContainerItemProxy */;
-		};
-		OBJ_116 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "APIKit::APIKit" /* APIKit */;
-			targetProxy = 09929E0B23C712F700C2CF65 /* PBXContainerItemProxy */;
-		};
-		OBJ_93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "APIKit::APIKit" /* APIKit */;
-			targetProxy = 09929E0923C712F500C2CF65 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		OBJ_102 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_103 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_107 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Pixela.xcodeproj/PixelaTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = PixelaTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_108 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Pixela.xcodeproj/PixelaTests_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = PixelaTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-					"DEBUG=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"SWIFT_PACKAGE=1",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-		OBJ_53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Pixela.xcodeproj/APIKit_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = APIKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = APIKit;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_54 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Pixela.xcodeproj/APIKit_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = APIKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = APIKit;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_81 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_82 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Pixela.xcodeproj/Pixela_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Pixela;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Pixela;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_88 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = Pixela.xcodeproj/Pixela_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Pixela;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Pixela;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_96 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		OBJ_101 /* Build configuration list for PBXAggregateTarget "PixelaPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_102 /* Debug */,
-				OBJ_103 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_106 /* Build configuration list for PBXNativeTarget "PixelaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_107 /* Debug */,
-				OBJ_108 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_2 /* Build configuration list for PBXProject "Pixela" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_52 /* Build configuration list for PBXNativeTarget "APIKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_53 /* Debug */,
-				OBJ_54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_80 /* Build configuration list for PBXNativeTarget "APIKitPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_81 /* Debug */,
-				OBJ_82 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_86 /* Build configuration list for PBXNativeTarget "Pixela" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_87 /* Debug */,
-				OBJ_88 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_95 /* Build configuration list for PBXNativeTarget "PixelaPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_96 /* Debug */,
-				OBJ_97 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = OBJ_1 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "APIKit::APIKit" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_53";
+         buildPhases = (
+            "OBJ_56",
+            "OBJ_79"
+         );
+         dependencies = (
+         );
+         name = "APIKit";
+         productName = "APIKit";
+         productReference = "APIKit::APIKit::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "APIKit::APIKit::Product" = {
+         isa = "PBXFileReference";
+         path = "APIKit.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "APIKit::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_81";
+         buildPhases = (
+            "OBJ_84"
+         );
+         dependencies = (
+         );
+         name = "APIKitPackageDescription";
+         productName = "APIKitPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_46";
+         projectDirPath = ".";
+         targets = (
+            "APIKit::APIKit",
+            "APIKit::SwiftPMPackageDescription",
+            "Pixela::Pixela",
+            "Pixela::SwiftPMPackageDescription",
+            "Pixela::PixelaPackageTests::ProductTarget",
+            "Pixela::PixelaTests"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "Pixela.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_101"
+         );
+      };
+      "OBJ_101" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_103" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_104",
+            "OBJ_105"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_104" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_105" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_106" = {
+         isa = "PBXTargetDependency";
+         target = "Pixela::PixelaTests";
+      };
+      "OBJ_108" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_109",
+            "OBJ_110"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_109" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Pixela.xcodeproj/PixelaTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "PixelaTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_110" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Pixela.xcodeproj/PixelaTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "PixelaTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_111" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_112",
+            "OBJ_113"
+         );
+      };
+      "OBJ_112" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_113" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_114" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_115",
+            "OBJ_116"
+         );
+      };
+      "OBJ_115" = {
+         isa = "PBXBuildFile";
+         fileRef = "Pixela::Pixela::Product";
+      };
+      "OBJ_116" = {
+         isa = "PBXBuildFile";
+         fileRef = "APIKit::APIKit::Product";
+      };
+      "OBJ_117" = {
+         isa = "PBXTargetDependency";
+         target = "Pixela::Pixela";
+      };
+      "OBJ_118" = {
+         isa = "PBXTargetDependency";
+         target = "APIKit::APIKit";
+      };
+      "OBJ_12" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_13",
+            "OBJ_14"
+         );
+         name = "PixelaTests";
+         path = "Tests/PixelaTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "PixelaTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "XCTestManifests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_16"
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_16" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_17",
+            "OBJ_45"
+         );
+         name = "APIKit 5.1.0";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_17" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_18",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_32",
+            "OBJ_36",
+            "OBJ_37",
+            "OBJ_38",
+            "OBJ_40",
+            "OBJ_41",
+            "OBJ_44"
+         );
+         name = "APIKit";
+         path = ".build/checkouts/APIKit/Sources/APIKit";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_18" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_19",
+            "OBJ_20",
+            "OBJ_21",
+            "OBJ_22",
+            "OBJ_23",
+            "OBJ_24"
+         );
+         name = "BodyParameters";
+         path = "BodyParameters";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "BodyParameters.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "Data+InputStream.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         path = "FormURLEncodedBodyParameters.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "JSONBodyParameters.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_23" = {
+         isa = "PBXFileReference";
+         path = "MultipartFormDataBodyParameters.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "ProtobufBodyParameters.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_25" = {
+         isa = "PBXFileReference";
+         path = "CallbackQueue.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_26" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_30",
+            "OBJ_31"
+         );
+         name = "DataParser";
+         path = "DataParser";
+         sourceTree = "<group>";
+      };
+      "OBJ_27" = {
+         isa = "PBXFileReference";
+         path = "DataParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "FormURLEncodedDataParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXFileReference";
+         path = "JSONDataParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         path = "ProtobufDataParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_31" = {
+         isa = "PBXFileReference";
+         path = "StringDataParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_32" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_33",
+            "OBJ_34",
+            "OBJ_35"
+         );
+         name = "Error";
+         path = "Error";
+         sourceTree = "<group>";
+      };
+      "OBJ_33" = {
+         isa = "PBXFileReference";
+         path = "RequestError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_34" = {
+         isa = "PBXFileReference";
+         path = "ResponseError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "SessionTaskError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_36" = {
+         isa = "PBXFileReference";
+         path = "HTTPMethod.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
+         path = "Request.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_39"
+         );
+         name = "Serializations";
+         path = "Serializations";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "URLEncodedSerialization.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXFileReference";
+         path = "Session.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_41" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_42",
+            "OBJ_43"
+         );
+         name = "SessionAdapter";
+         path = "SessionAdapter";
+         sourceTree = "<group>";
+      };
+      "OBJ_42" = {
+         isa = "PBXFileReference";
+         path = "SessionAdapter.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_43" = {
+         isa = "PBXFileReference";
+         path = "URLSessionAdapter.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_44" = {
+         isa = "PBXFileReference";
+         path = "Unavailable.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_45" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/Econa/Git/Swift/Pixela.swift/.build/checkouts/APIKit/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_46" = {
+         isa = "PBXGroup";
+         children = (
+            "Pixela::PixelaTests::Product",
+            "Pixela::Pixela::Product",
+            "APIKit::APIKit::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_11",
+            "OBJ_15",
+            "OBJ_46",
+            "OBJ_50",
+            "OBJ_51"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXFileReference";
+         path = "LICENSE";
+         sourceTree = "<group>";
+      };
+      "OBJ_51" = {
+         isa = "PBXFileReference";
+         path = "README.md";
+         sourceTree = "<group>";
+      };
+      "OBJ_53" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_54",
+            "OBJ_55"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_54" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Pixela.xcodeproj/APIKit_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "APIKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "APIKit";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_55" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Pixela.xcodeproj/APIKit_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "APIKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "APIKit";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_56" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_57",
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60",
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65",
+            "OBJ_66",
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+            "OBJ_72",
+            "OBJ_73",
+            "OBJ_74",
+            "OBJ_75",
+            "OBJ_76",
+            "OBJ_77",
+            "OBJ_78"
+         );
+      };
+      "OBJ_57" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_58" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_59" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_61" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_23";
+      };
+      "OBJ_62" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_63" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_25";
+      };
+      "OBJ_64" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_27";
+      };
+      "OBJ_65" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_66" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_67" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_68" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_31";
+      };
+      "OBJ_69" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_33";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_34";
+      };
+      "OBJ_71" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_72" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_36";
+      };
+      "OBJ_73" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_37";
+      };
+      "OBJ_74" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+      };
+      "OBJ_75" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_40";
+      };
+      "OBJ_76" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_42";
+      };
+      "OBJ_77" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_43";
+      };
+      "OBJ_78" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_44";
+      };
+      "OBJ_79" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10"
+         );
+         name = "Pixela";
+         path = "Sources/Pixela";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_81" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_82",
+            "OBJ_83"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_82" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_83" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_84" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_85"
+         );
+      };
+      "OBJ_85" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_45";
+      };
+      "OBJ_87" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_88",
+            "OBJ_89"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_88" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Pixela.xcodeproj/Pixela_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Pixela";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Pixela";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_89" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "Pixela.xcodeproj/Pixela_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Pixela";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Pixela";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Configuration.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_91",
+            "OBJ_92"
+         );
+      };
+      "OBJ_91" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_92" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_93" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_94"
+         );
+      };
+      "OBJ_94" = {
+         isa = "PBXBuildFile";
+         fileRef = "APIKit::APIKit::Product";
+      };
+      "OBJ_95" = {
+         isa = "PBXTargetDependency";
+         target = "APIKit::APIKit";
+      };
+      "OBJ_97" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_98",
+            "OBJ_99"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_98" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.1"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_99" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.1"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "Pixela::Pixela" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_87";
+         buildPhases = (
+            "OBJ_90",
+            "OBJ_93"
+         );
+         dependencies = (
+            "OBJ_95"
+         );
+         name = "Pixela";
+         productName = "Pixela";
+         productReference = "Pixela::Pixela::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Pixela::Pixela::Product" = {
+         isa = "PBXFileReference";
+         path = "Pixela.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Pixela::PixelaPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_103";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_106"
+         );
+         name = "PixelaPackageTests";
+         productName = "PixelaPackageTests";
+      };
+      "Pixela::PixelaTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_108";
+         buildPhases = (
+            "OBJ_111",
+            "OBJ_114"
+         );
+         dependencies = (
+            "OBJ_117",
+            "OBJ_118"
+         );
+         name = "PixelaTests";
+         productName = "PixelaTests";
+         productReference = "Pixela::PixelaTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "Pixela::PixelaTests::Product" = {
+         isa = "PBXFileReference";
+         path = "PixelaTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Pixela::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_97";
+         buildPhases = (
+            "OBJ_100"
+         );
+         dependencies = (
+         );
+         name = "PixelaPackageDescription";
+         productName = "PixelaPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+   };
+   rootObject = "OBJ_1";
 }
