@@ -5,6 +5,7 @@
 //  Created by Shunsuke Furubayashi on 2020/01/09.
 //
 
+import Foundation
 import APIKit
 
 public final class Pixela {
@@ -15,12 +16,16 @@ public final class Pixela {
     }()
 
     public var configuration: Configuration?
-    private let session: APIKit.Session
+    private let apiClient: APIClient
 
     // MARK: - Initialize
-    init(configuration: Configuration?, session: APIKit.Session = .shared) {
+    public convenience init(configuration: Configuration?) {
+        self.init(configuration: configuration, session: .shared)
+    }
+
+    init(configuration: Configuration?, session: APIKit.Session) {
         self.configuration = configuration
-        self.session = session
+        self.apiClient = APIClient(session: session)
     }
 
     private func fetchConfiguration() -> Configuration {
