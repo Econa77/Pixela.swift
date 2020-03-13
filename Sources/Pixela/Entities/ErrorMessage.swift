@@ -10,6 +10,6 @@ import Foundation
 public struct ErrorMessage: Decodable {
 
     // MARK: - Properties
-    let message: String
+    public let message: String
 
 }

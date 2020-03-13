@@ -10,11 +10,11 @@ import Foundation
 public struct GraphStatistics: Decodable {
 
     // MARK: - Properties
-    let totalPixelsCount: Int
-    let maxQuantity: Int
-    let minQuantity: Int
-    let totalQuantity: Int
-    let avgQuantity: Int
-    let todaysQuantity: Int
+    public let totalPixelsCount: Int
+    public let maxQuantity: Int
+    public let minQuantity: Int
+    public let totalQuantity: Int
+    public let avgQuantity: Int
+    public let todaysQuantity: Int
 
 }

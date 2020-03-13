@@ -14,9 +14,9 @@ public enum ChannelType {
 public struct Slack: Decodable {
 
     // MARK: - Properties
-    let url: String
-    let userName: String
-    let channelName: String
+    public let url: String
+    public let userName: String
+    public let channelName: String
 
     // MARK: - Initialize
     public init(url: String, userName: String, channelName: String) {

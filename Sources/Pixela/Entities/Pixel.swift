@@ -10,8 +10,8 @@ import Foundation
 public struct Pixel: Decodable {
 
     // MARK: - Properties
-    let quantity: String
-    let optionalData: Pixel.OptionalData?
+    public let quantity: String
+    public let optionalData: Pixel.OptionalData?
 
 }
 

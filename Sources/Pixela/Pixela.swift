@@ -217,3 +217,37 @@ public extension Pixela {
         apiClient.send(request, completion: completion)
     }
 }
+
+// MARK: - Notifications Request
+public extension Pixela {
+    func createNotification(graphID: String, id: String, name: String, target: NotificationTarget, condition: NotificationCondition, threshold: String, channelID: String, completion: @escaping ((Result<Notification, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.CreateNotificationRequest(configuration: configuration, graphID: graphID, id: id, name: name, target: target, condition: condition, threshold: threshold, channelID: channelID)
+        apiClient.send(request, completion: completion)
+    }
+
+    func getNotifications(graphID: String, completion: @escaping ((Result<[Notification], PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.GetNotificationsRequest(configuration: configuration, graphID: graphID)
+        apiClient.send(request) { result in
+            switch result {
+            case let .success(response):
+                completion(.success(response.notifications))
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
+    }
+
+    func updateNotification(graphID: String, id: String, name: String?, target: NotificationTarget?, condition: NotificationCondition?, threshold: String?, channelID: String?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.UpdateNotificationRequest(configuration: configuration, graphID: graphID, id: id, name: name, target: target, condition: condition, threshold: threshold, channelID: channelID)
+        apiClient.send(request, completion: completion)
+    }
+
+    func deleteNotification(graphID: String, id: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.DeleteNotificationRequest(configuration: configuration, graphID: graphID, id: id)
+        apiClient.send(request, completion: completion)
+    }
+}

@@ -10,9 +10,9 @@ import Foundation
 public struct Channel: Decodable {
 
     // MARK: - Properties
-    let id: String
-    let name: String
-    let type: ChannelType
+    public let id: String
+    public let name: String
+    public let type: ChannelType
 
     // MARK: - Coding Keys
     private enum CodingKeys: String, CodingKey {

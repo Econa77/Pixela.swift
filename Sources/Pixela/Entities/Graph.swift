@@ -10,16 +10,16 @@ import Foundation
 public struct Graph: Decodable {
 
     // MARK: - Properties
-    let id: String
-    let name: String
-    let unit: String
-    let type: GraphType
-    let color: GraphColor
-    let purgeCacheURLs: [URL]
-    let timeZone: TimeZone?
-    let selfSufficient: GraphSelfSufficient
-    let isSecret: Bool?
-    let isPublishOptionalData: Bool?
+    public let id: String
+    public let name: String
+    public let unit: String
+    public let type: GraphType
+    public let color: GraphColor
+    public let purgeCacheURLs: [URL]
+    public let timeZone: TimeZone?
+    public let selfSufficient: GraphSelfSufficient
+    public let isSecret: Bool?
+    public let isPublishOptionalData: Bool?
 
     // MARK: - CodingKeys
     private enum CodingKeys: String, CodingKey {
