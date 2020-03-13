@@ -17,7 +17,6 @@ extension PixelaRequest {
     var baseURL: URL {
         return URL(string: "https://pixe.la")!
     }
-    //     _client.DefaultRequestHeaders.Add("User-Agent", $"PixelaClient.NET/{Version}");
 }
 
 extension PixelaRequest {

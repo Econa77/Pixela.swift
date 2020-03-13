@@ -39,8 +39,20 @@ public final class Pixela {
 
 // MARK: - Users Request
 public extension Pixela {
-    func createUser(token: String, username: String, isAgreeTermsOfService: Bool, isNotMinor: Bool, thanksCode: String?, completion: @escaping (Result<Configuration, PixelaError>) -> Void) {
+    func createUser(token: String, username: String, isAgreeTermsOfService: Bool, isNotMinor: Bool, thanksCode: String?, completion: @escaping ((Result<Configuration, PixelaError>) -> Void)) {
         let request = PixelaAPI.CreateUserRequest(token: token, username: username, isAgreeTermsOfService: isAgreeTermsOfService, isNotMinor: isNotMinor, thanksCode: thanksCode)
+        apiClient.send(request, completion: completion)
+    }
+
+    func updateUser(newToken: String, thanksCode: String?, completion: @escaping ((Result<Configuration, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.UpdateUserRequest(token: configuration.token, username: configuration.username, newToken: newToken, thanksCode: thanksCode)
+        apiClient.send(request, completion: completion)
+    }
+
+    func deleteUser(completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.DeleteUserRequest(token: configuration.token, username: configuration.username)
         apiClient.send(request, completion: completion)
     }
 }
