@@ -16,7 +16,7 @@ extension PixelaAPI {
         // MARK: - Properties
         let configuration: Configuration
         let graphID: String
-        let type: WebhookType
+        let type: Webhook.WebhookType
 
         // MARK: - Request Type
         typealias Response = RequestResponse

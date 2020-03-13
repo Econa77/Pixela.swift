@@ -17,7 +17,7 @@ extension PixelaAPI {
         let configuration: Configuration
         let id: String
         let name: String
-        let type: ChannelType
+        let type: Channel.ChannelType
 
         // MARK: - ResponseType
         typealias Response = Channel
@@ -32,7 +32,7 @@ extension PixelaAPI {
             params["name"] = name
             switch type {
             case let .slack(slack):
-                params["type"] = NotificationType.slack.rawValue
+                params["type"] = Channel.NotificationType.slack.rawValue
                 var detail = [String: Any]()
                 detail["url"] = slack.url
                 detail["userName"] = slack.userName
@@ -85,7 +85,7 @@ extension PixelaAPI {
         let configuration: Configuration
         let id: String
         let name: String?
-        let type: ChannelType?
+        let type: Channel.ChannelType?
 
         // MARK: - Request Type
         typealias Response = Void
@@ -99,7 +99,7 @@ extension PixelaAPI {
             params["name"] = name
             switch type {
             case let .some(.slack(slack)):
-                params["type"] = NotificationType.slack.rawValue
+                params["type"] = Channel.NotificationType.slack.rawValue
                 var detail = [String: Any]()
                 detail["url"] = slack.url
                 detail["userName"] = slack.userName

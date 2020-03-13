@@ -12,13 +12,20 @@ public struct Webhook: Decodable {
     // MARK: - Properties
     public let webhookHash: String
     public let graphID: String
-    public let type: WebhookType
+    public let type: Webhook.WebhookType
 
     // MARK: - Initialize
-    init(webhookHash: String, graphID: String, type: WebhookType) {
+    init(webhookHash: String, graphID: String, type: Webhook.WebhookType) {
         self.webhookHash = webhookHash
         self.graphID = graphID
         self.type = type
     }
 
+}
+
+extension Webhook {
+    public enum WebhookType: String, Decodable {
+        case increment
+        case decrement
+    }
 }

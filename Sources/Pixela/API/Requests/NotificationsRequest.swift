@@ -18,8 +18,8 @@ extension PixelaAPI {
         let graphID: String
         let id: String
         let name: String
-        let target: NotificationTarget
-        let condition: NotificationCondition
+        let target: Notification.Target
+        let condition: Notification.Condition
         let threshold: String
         let channelID: String
 
@@ -86,8 +86,8 @@ extension PixelaAPI {
         let graphID: String
         let id: String
         let name: String?
-        let target: NotificationTarget?
-        let condition: NotificationCondition?
+        let target: Notification.Target?
+        let condition: Notification.Condition?
         let threshold: String?
         let channelID: String?
 

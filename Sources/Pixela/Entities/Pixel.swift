@@ -13,6 +13,12 @@ public struct Pixel: Decodable {
     public let quantity: String
     public let optionalData: Pixel.OptionalData?
 
+    // MARK: - Initialize
+    init(quantity: String, optionalData: Pixel.OptionalData?) {
+        self.quantity = quantity
+        self.optionalData = optionalData
+    }
+
 }
 
 extension Pixel {

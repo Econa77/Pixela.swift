@@ -18,10 +18,10 @@ extension PixelaAPI {
         let id: String
         let name: String
         let unit: String
-        let type: GraphType
-        let color: GraphColor
+        let type: Graph.GraphType
+        let color: Graph.Color
         let timeZone: TimeZone?
-        let selfSufficient: GraphSelfSufficient?
+        let selfSufficient: Graph.SelfSufficient?
         let isSecret: Bool?
         let isPublishOptionalData: Bool?
 
@@ -90,10 +90,10 @@ extension PixelaAPI {
         let id: String
         let name: String?
         let unit: String?
-        let color: GraphColor?
+        let color: Graph.Color?
         let timeZone: TimeZone?
         let purgeCacheURLs: [URL]?
-        let selfSufficient: GraphSelfSufficient?
+        let selfSufficient: Graph.SelfSufficient?
         let isSecret: Bool?
         let isPublishOptionalData: Bool?
 
@@ -186,7 +186,7 @@ extension PixelaAPI {
         let id: String
 
         // MARK: - Request Type
-        typealias Response = GraphStatistics
+        typealias Response = Graph.Statistics
 
         let method: HTTPMethod = .get
         var path: String {

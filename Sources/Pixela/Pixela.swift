@@ -55,7 +55,7 @@ public extension Pixela {
 
 // MARK: - Channels Request
 public extension Pixela {
-    func createChannel(id: String, name: String, type: ChannelType, completion: @escaping ((Result<Channel, PixelaError>) -> Void)) {
+    func createChannel(id: String, name: String, type: Channel.ChannelType, completion: @escaping ((Result<Channel, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.CreateChannelRequest(configuration: configuration, id: id, name: name, type: type)
         apiClient.send(request, completion: completion)
@@ -74,7 +74,7 @@ public extension Pixela {
         }
     }
 
-    func updateChannel(id: String, name: String?, type: ChannelType?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+    func updateChannel(id: String, name: String?, type: Channel.ChannelType?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.UpdateChannelRequest(configuration: configuration, id: id, name: name, type: type)
         apiClient.send(request, completion: completion)
@@ -89,7 +89,7 @@ public extension Pixela {
 
 // MARK: - Graphs Request
 public extension Pixela {
-    func createGraph(id: String, name: String, unit: String, type: GraphType, color: GraphColor, timeZone: TimeZone?, selfSufficient: GraphSelfSufficient?, isSecret: Bool?, isPublishOptionalData: Bool?, completion: @escaping ((Result<Graph, PixelaError>) -> Void)) {
+    func createGraph(id: String, name: String, unit: String, type: Graph.GraphType, color: Graph.Color, timeZone: TimeZone?, selfSufficient: Graph.SelfSufficient?, isSecret: Bool?, isPublishOptionalData: Bool?, completion: @escaping ((Result<Graph, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.CreateGraphRequest(configuration: configuration, id: id, name: name, unit: unit, type: type, color: color, timeZone: timeZone, selfSufficient: selfSufficient, isSecret: isSecret, isPublishOptionalData: isPublishOptionalData)
         apiClient.send(request, completion: completion)
@@ -108,12 +108,12 @@ public extension Pixela {
         }
     }
 
-    func getGraphSVGURL(id: String, date: Date?, mode: GraphSVGMode?) -> URL {
+    func getGraphSVGURL(id: String, date: Date?, mode: Graph.SVGMode?) -> URL {
         let configuration = fetchConfiguration()
         return getGraphSVGURL(username: configuration.username, id: id, date: date, mode: mode)
     }
 
-    func getGraphSVGURL(username: String, id: String, date: Date?, mode: GraphSVGMode?) -> URL {
+    func getGraphSVGURL(username: String, id: String, date: Date?, mode: Graph.SVGMode?) -> URL {
         if let date = date, let mode = mode {
             return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id)?date=\(date.formatString())&mode=\(mode.rawValue)")!
         } else if let date = date {
@@ -125,7 +125,7 @@ public extension Pixela {
         }
     }
 
-    func updateGraph(id: String, name: String?, unit: String?, color: GraphColor?, timeZone: TimeZone?, purgeCacheURLs: [URL]?, selfSufficient: GraphSelfSufficient?, isSecret: Bool?, isPublishOptionalData: Bool?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+    func updateGraph(id: String, name: String?, unit: String?, color: Graph.Color?, timeZone: TimeZone?, purgeCacheURLs: [URL]?, selfSufficient: Graph.SelfSufficient?, isSecret: Bool?, isPublishOptionalData: Bool?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.UpdateGraphRequest(configuration: configuration, id: id, name: name, unit: unit, color: color, timeZone: timeZone, purgeCacheURLs: purgeCacheURLs, selfSufficient: selfSufficient, isSecret: isSecret, isPublishOptionalData: isPublishOptionalData)
         apiClient.send(request, completion: completion)
@@ -137,12 +137,12 @@ public extension Pixela {
         apiClient.send(request, completion: completion)
     }
 
-    func getGraphHTMLURL(id: String, mode: GraphHTMLMode?) -> URL {
+    func getGraphHTMLURL(id: String, mode: Graph.HTMLMode?) -> URL {
         let configuration = fetchConfiguration()
         return getGraphHTMLURL(username: configuration.username, id: id, mode: mode)
     }
 
-    func getGraphHTMLURL(username: String, id: String, mode: GraphHTMLMode?) -> URL {
+    func getGraphHTMLURL(username: String, id: String, mode: Graph.HTMLMode?) -> URL {
         if let mode = mode {
             return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id).html?mode=\(mode.rawValue)")!
         } else {
@@ -172,7 +172,7 @@ public extension Pixela {
         }
     }
 
-    func getGraphStatistics(id: String, completion: @escaping ((Result<GraphStatistics, PixelaError>) -> Void)) {
+    func getGraphStatistics(id: String, completion: @escaping ((Result<Graph.Statistics, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.GetGraphStatisticsRequest(configuration: configuration, id: id)
         apiClient.send(request, completion: completion)
@@ -220,7 +220,7 @@ public extension Pixela {
 
 // MARK: - Notifications Request
 public extension Pixela {
-    func createNotification(graphID: String, id: String, name: String, target: NotificationTarget, condition: NotificationCondition, threshold: String, channelID: String, completion: @escaping ((Result<Notification, PixelaError>) -> Void)) {
+    func createNotification(graphID: String, id: String, name: String, target: Notification.Target, condition: Notification.Condition, threshold: String, channelID: String, completion: @escaping ((Result<Notification, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.CreateNotificationRequest(configuration: configuration, graphID: graphID, id: id, name: name, target: target, condition: condition, threshold: threshold, channelID: channelID)
         apiClient.send(request, completion: completion)
@@ -239,7 +239,7 @@ public extension Pixela {
         }
     }
 
-    func updateNotification(graphID: String, id: String, name: String?, target: NotificationTarget?, condition: NotificationCondition?, threshold: String?, channelID: String?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+    func updateNotification(graphID: String, id: String, name: String?, target: Notification.Target?, condition: Notification.Condition?, threshold: String?, channelID: String?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.UpdateNotificationRequest(configuration: configuration, graphID: graphID, id: id, name: name, target: target, condition: condition, threshold: threshold, channelID: channelID)
         apiClient.send(request, completion: completion)
@@ -254,7 +254,7 @@ public extension Pixela {
 
 // MARK: - Webhooks Request
 public extension Pixela {
-    func createWebhook(graphID: String, type: WebhookType, completion: @escaping ((Result<Webhook, PixelaError>) -> Void)) {
+    func createWebhook(graphID: String, type: Webhook.WebhookType, completion: @escaping ((Result<Webhook, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.CreateWebhookRequest(configuration: configuration, graphID: graphID, type: type)
         apiClient.send(request) { result in
