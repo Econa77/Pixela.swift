@@ -178,3 +178,42 @@ public extension Pixela {
         apiClient.send(request, completion: completion)
     }
 }
+
+// MARK: - Pixels Request
+public extension Pixela {
+    func recordPixel(graphID: String, date: Date, quantity: String, optionalData: [String: Any]?, completion: @escaping ((Result<Pixel, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.RecordPixelRequest(configuration: configuration, graphID: graphID, date: date, quantity: quantity, optionalData: optionalData)
+        apiClient.send(request, completion: completion)
+    }
+
+    func getPixel(graphID: String, date: Date, completion: @escaping ((Result<Pixel, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.GetPixelRequest(configuration: configuration, graphID: graphID, date: date)
+        apiClient.send(request, completion: completion)
+    }
+
+    func updatePixel(graphID: String, date: Date, quantity: String?, optionalData: [String: Any]?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.UpdatePixelRequest(configuration: configuration, graphID: graphID, date: date, quantity: quantity, optionalData: optionalData)
+        apiClient.send(request, completion: completion)
+    }
+
+    func incrementPixel(graphID: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.IncrementPixelRequest(configuration: configuration, graphID: graphID)
+        apiClient.send(request, completion: completion)
+    }
+
+    func decrementPixel(graphID: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.DecrementPixelRequest(configuration: configuration, graphID: graphID)
+        apiClient.send(request, completion: completion)
+    }
+
+    func deletePixel(graphID: String, date: Date, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.DeletePixelRequest(configuration: configuration, graphID: graphID, date: date)
+        apiClient.send(request, completion: completion)
+    }
+}
