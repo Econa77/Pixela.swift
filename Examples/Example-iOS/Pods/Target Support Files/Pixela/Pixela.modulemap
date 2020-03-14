@@ -1,0 +1,6 @@
+framework module Pixela {
+  umbrella header "Pixela-umbrella.h"
+
+  export *
+  module * { export * }
+}

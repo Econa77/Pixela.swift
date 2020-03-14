@@ -1,0 +1,23 @@
+PODS:
+  - APIKit (5.1.0)
+  - Pixela (0.0.1):
+    - APIKit (~> 5.0)
+
+DEPENDENCIES:
+  - Pixela (from `../../`)
+
+SPEC REPOS:
+  trunk:
+    - APIKit
+
+EXTERNAL SOURCES:
+  Pixela:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  APIKit: 9e1a4069608bf0ae5238811e6cfc26928ad4d01e
+  Pixela: b5f038799d45196c5add99e0a15fc079e56baac9
+
+PODFILE CHECKSUM: b79850779cf0817967c935dde2d0504f6d91e024
+
+COCOAPODS: 1.9.1
