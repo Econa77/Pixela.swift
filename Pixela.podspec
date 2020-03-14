@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Econa77" => "s.f.1992.ip@gmail.com" }
   s.source           = { :git => "https://github.com/Econa77/Pixela.swift.git",
-                         :tag => s.version.to_s }
+                         :tag => "v#{s.version.to_s}" }
   s.source_files = "Sources/**/*.{swift,h,m}"
   s.swift_version = "5.0"
   s.dependency "APIKit", "~> 5.0"
