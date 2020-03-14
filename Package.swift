@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Pixela",
+    platforms: [
+        .macOS(.v10_12), .iOS(.v11)
+    ],
     products: [
         .library(
             name: "Pixela",
@@ -20,5 +23,6 @@ let package = Package(
         .testTarget(
             name: "PixelaTests",
             dependencies: ["Pixela"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
