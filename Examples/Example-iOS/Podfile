@@ -1,0 +1,10 @@
+platform :ios, '11.0'
+use_frameworks!
+
+source 'https://cdn.cocoapods.org/'
+
+target 'Example-iOS' do 
+  
+  pod 'Pixela', :path => '../../'
+  
+end
