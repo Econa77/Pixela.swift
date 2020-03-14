@@ -1,6 +1,6 @@
 //
 //  Configuration.swift
-//  APIKit
+//  Pixela
 //
 //  Created by Shunsuke Furubayashi on 2020/03/13.
 //
