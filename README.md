@@ -13,6 +13,59 @@
 - iOS 11.0 or later
 - macOS 10.12 or later
 
+# Getting started
+## Setting user configuration
+To make a request other than the registration API, it is necessary to set configuration.
+
+```swift
+Pixela.shared.configuration = Configuration(username: "username", token: "secret-token")
+```
+
+## User registration
+```swift
+Pixela.shared.createUser(token: "secret-token", username: "username", isAgreeTermsOfService: true, isNotMinor: true, thanksCode: "thanks-code") { result in
+    switch result {
+    case let .success(configuration):
+        // Succeed new user registration
+        Pixela.shared.configuration = configuration
+    case let .failure(error)
+        // Failed registration
+    }
+}
+```
+
+## Other APIs
+This library supports all [Pixela](https://pixe.la/) API as of March 16, 2020. Check here for a list of Pixela APIs. (https://docs.pixe.la/)
+
+```swift
+Pixela.shared.configuration = Configuration(username: "username", token: "secret-token")
+Pixela.shared.getGraphs { result in
+    switch result {
+    case let .success(graphs):
+        print(graphs)
+    case let .failure(error):
+        print(error)
+    }
+}
+```
+
+## Multi account handling
+Instead of using a shared instance, can use a Pixela instance for multiple accounts by manage it yourself.
+
+```
+let user1 = Pixela(configuration: Configuration(username: "user1", token: "user1-secret-token"))
+
+let user2 = Pixela(configuration: nil)
+user2.configuration = Configuration(username: "user2", token: "user2-secret-token")
+```
+
+## Error cases
+All errors in the library will return a `PixelaError`. `PixelaError` is the next 3 cases:
+
+- `PixelaError.requestFailed`: Error while creating URLRequest from Request. (some APIKit.SessionTaskError.requestError)
+- `PixelaError.connectionFailed`: Error of networking backend stack. (some APIKit.SessionTaskError.connectionError)
+- `PixelaError.responseFailed(ResponseErrorReason)`: Error while handling response.
+
 # Contributing
 1. Fork it ( https://github.com/Econa77/Pixela.swift/fork )
 2. Generate Pixela.xcodeproj (`swift package generate-xcodeproj`)
