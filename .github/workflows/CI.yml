@@ -38,7 +38,7 @@ jobs:
     - name: Cache Mint packages
       uses: actions/cache@v1
       with:
-        path: mint
+        path: ${{ env.MINT_PATH }}
         key: ${{ runner.os }}-mint-${{ hashFiles('**/Mintfile') }}
         restore-keys: |
           ${{ runner.os }}-mint-
@@ -76,3 +76,6 @@ jobs:
         SCHEME: Pixela-Package
         SDK: ${{ matrix.env.sdk }}
         DESTINATION: ${{ matrix.env.destination }}
+  
+    env:
+      MINT_PATH: ${{ github.workspace }}/mint
