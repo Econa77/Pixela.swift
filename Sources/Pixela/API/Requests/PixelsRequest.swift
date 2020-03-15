@@ -36,7 +36,7 @@ extension PixelaAPI {
             }
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -64,7 +64,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(graphID)/\(date.formatString())"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -95,7 +95,7 @@ extension PixelaAPI {
             }
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -115,7 +115,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(graphID)/increment"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token,
                     "Content-Length": "0"]
         }
@@ -136,7 +136,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(graphID)/decrement"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token,
                     "Content-Length": "0"]
         }
@@ -158,7 +158,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(graphID)/\(date.formatString())"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 

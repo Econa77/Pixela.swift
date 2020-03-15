@@ -45,7 +45,7 @@ extension PixelaAPI {
             params["publishOptionalData"] = isPublishOptionalData
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -68,7 +68,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -116,7 +116,7 @@ extension PixelaAPI {
             params["publishOptionalData"] = isPublishOptionalData
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -136,7 +136,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(id)"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -164,7 +164,7 @@ extension PixelaAPI {
             params["to"] = to?.formatString()
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -192,7 +192,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(id)/stats"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 

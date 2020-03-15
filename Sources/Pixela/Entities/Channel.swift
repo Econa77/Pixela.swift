@@ -49,14 +49,14 @@ extension Channel {
     }
 }
 
-extension Channel {
-    public enum ChannelType {
+public extension Channel {
+    enum ChannelType {
         case slack(Slack)
     }
 }
 
-extension Channel.ChannelType {
-    public struct Slack: Decodable {
+public extension Channel.ChannelType {
+    struct Slack: Decodable {
 
         // MARK: - Properties
         public let url: String

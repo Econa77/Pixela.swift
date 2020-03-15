@@ -31,7 +31,7 @@ extension PixelaAPI {
             params["type"] = type.rawValue
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -58,7 +58,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/webhooks"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -86,7 +86,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/webhooks/\(webhookHash)"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["Content-Length": "0"]
         }
 
@@ -106,7 +106,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/webhooks/\(webhookHash)"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
