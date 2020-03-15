@@ -40,7 +40,7 @@ extension PixelaAPI {
             params["channelID"] = channelID
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -64,7 +64,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(graphID)/notifications"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -107,7 +107,7 @@ extension PixelaAPI {
             params["channelID"] = channelID
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -128,7 +128,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/graphs/\(graphID)/notifications/\(id)"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 

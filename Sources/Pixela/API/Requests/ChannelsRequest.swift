@@ -41,7 +41,7 @@ extension PixelaAPI {
             }
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -64,7 +64,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/channels"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -110,7 +110,7 @@ extension PixelaAPI {
             }
             return params
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 
@@ -130,7 +130,7 @@ extension PixelaAPI {
         var path: String {
             return "/v1/users/\(configuration.username)/channels/\(id)"
         }
-        var headerFields: [String : String] {
+        var headerFields: [String: String] {
             return ["X-USER-TOKEN": configuration.token]
         }
 

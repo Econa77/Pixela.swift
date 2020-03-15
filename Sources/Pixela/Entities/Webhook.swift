@@ -23,8 +23,8 @@ public struct Webhook: Decodable {
 
 }
 
-extension Webhook {
-    public enum WebhookType: String, Decodable {
+public extension Webhook {
+    enum WebhookType: String, Decodable {
         case increment
         case decrement
     }

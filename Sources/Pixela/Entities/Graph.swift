@@ -69,15 +69,15 @@ public struct Graph: Decodable {
 
 }
 
-extension Graph {
-    public enum GraphType: String, Decodable {
+public extension Graph {
+    enum GraphType: String, Decodable {
         case int
         case float
     }
 }
 
-extension Graph {
-    public enum Color: String, CustomStringConvertible, Decodable {
+public extension Graph {
+    enum Color: String, CustomStringConvertible, Decodable {
         case green = "shibafu"
         case red = "momiji"
         case blue = "sora"
@@ -92,31 +92,30 @@ extension Graph {
     }
 }
 
-extension Graph {
-    public enum SelfSufficient: String, Decodable {
+public extension Graph {
+    enum SelfSufficient: String, Decodable {
         case increment
         case decrement
         case none
     }
 }
 
-
-extension Graph {
-    public enum SVGMode: String {
+public extension Graph {
+    enum SVGMode: String {
         case short
         case badge
         case line
     }
 
-    public enum HTMLMode: String {
+    enum HTMLMode: String {
         case simple
         case simpleShort = "simple-short"
     }
 
 }
 
-extension Graph {
-    public struct Statistics: Decodable {
+public extension Graph {
+    struct Statistics: Decodable {
 
         // MARK: - Properties
         public let totalPixelsCount: Int

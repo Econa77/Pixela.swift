@@ -29,14 +29,14 @@ public struct Notification: Decodable {
 
 }
 
-extension Notification {
-    public enum Target: String, Decodable {
+public extension Notification {
+    enum Target: String, Decodable {
         case quantity
     }
 }
 
-extension Notification {
-    public enum Condition: String, CustomStringConvertible, Decodable {
+public extension Notification {
+    enum Condition: String, CustomStringConvertible, Decodable {
         case greaterThan = ">"
         case equal = "="
         case lessThan = "<"
