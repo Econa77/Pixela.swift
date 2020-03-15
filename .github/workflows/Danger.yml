@@ -43,7 +43,7 @@ jobs:
     - name: Install Mint and Packages
       run: |
         brew install mint
-        mint bootstrap
+        mint bootstrap --link
 
     - name: Generate Xcode Project
       run: swift package generate-xcodeproj
