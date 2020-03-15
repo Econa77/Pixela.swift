@@ -11,7 +11,7 @@ jobs:
       matrix:
         env:
           - sdk: iphonesimulator
-            destination: name=iPhone 11,OS=13.0
+            destination: name=iPhone 11
           
           - sdk: macosx
             destination: arch=x86_64
