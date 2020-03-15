@@ -1,0 +1,41 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    strategy:
+      matrix:
+        env:
+          - sdk: iphonesimulator
+            destination: name=iPhone 11,OS=13.0
+          
+          - sdk: macosx
+            destination: arch=x86_64
+
+    steps:
+    - uses: actions/checkout@v1
+    
+    - name: Select Xcode
+      run: sudo xcode-select -s /Applications/Xcode_11.3.1.app
+
+    - name: Generate Xcode Project
+      run: swift package generate-xcodeproj
+
+    - name: Build and Test
+      run: |
+        set -o pipefail
+        xcodebuild clean build test \
+          -project "$PROJECT" \
+          -scheme "$SCHEME" \
+          -sdk "$SDK" \
+          -destination "$DESTINATION" \
+          -configuration Debug | xcpretty -c;
+      env:
+        PROJECT: Pixela.xcodeproj
+        SCHEME: Pixela-Package
+        SDK: ${{ matrix.env.sdk }}
+        DESTINATION: ${{ matrix.env.destination }}
