@@ -54,4 +54,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
     env:
-      MINT_PATH: ${{ github.workspace }}/mint
+      MINT_PATH: mint
