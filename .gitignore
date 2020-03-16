@@ -41,6 +41,7 @@ Package.resolved
 Packages/
 Package.pins
 .build/
+.swiftpm
 
 # CocoaPods
 #
