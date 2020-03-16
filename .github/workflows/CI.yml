@@ -27,14 +27,15 @@ jobs:
     - name: Build and Test
       run: |
         set -o pipefail
-        xcodebuild clean build test \
-          -project "$PROJECT" \
+        xcodebuild build-for-testing \
+          -workspace "$PROJECT" \
           -scheme "$SCHEME" \
           -sdk "$SDK" \
           -destination "$DESTINATION" \
-          -configuration Debug | xcpretty -c;
+          -configuration Debug \
+          ENABLE_TESTABILITY=YES | xcpretty -c;
       env:
-        PROJECT: Pixela.xcodeproj
+        PROJECT: Pixela.xcworkspace
         SCHEME: Pixela
         SDK: ${{ matrix.env.sdk }}
         DESTINATION: ${{ matrix.env.destination }}
