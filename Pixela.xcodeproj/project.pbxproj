@@ -30,6 +30,8 @@
 		FA267105241F4A5400899E5E /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FF241F4A5400899E5E /* Pixel.swift */; };
 		FA267106241F4A5400899E5E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267100241F4A5400899E5E /* ErrorMessage.swift */; };
 		FA267109241F4A5800899E5E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267108241F4A5800899E5E /* DateExtension.swift */; };
+		FA267141241F4CB500899E5E /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA26713D241F4CA500899E5E /* APIKit.framework */; };
+		FA267142241F4CB500899E5E /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA26713D241F4CA500899E5E /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,35 @@
 			remoteGlobalIDString = FA2670B7241E965800899E5E;
 			remoteInfo = Pixela;
 		};
+		FA26713C241F4CA500899E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA267137241F4CA500899E5E /* APIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 141F12261C1C9ABE0026D415;
+			remoteInfo = APIKit;
+		};
+		FA26713E241F4CA500899E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA267137241F4CA500899E5E /* APIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 141F123C1C1C9AC70026D415;
+			remoteInfo = Tests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA267143241F4CB500899E5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA267142241F4CB500899E5E /* APIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA2670B8241E965800899E5E /* Pixela.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pixela.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +104,7 @@
 		FA2670FF241F4A5400899E5E /* Pixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
 		FA267100241F4A5400899E5E /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		FA267108241F4A5800899E5E /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		FA267137241F4CA500899E5E /* APIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APIKit.xcodeproj; path = Carthage/Checkouts/APIKit/APIKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA267141241F4CB500899E5E /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +134,8 @@
 				FA2670D4241E96A200899E5E /* Tests */,
 				FA2670D6241E96CB00899E5E /* Configurations */,
 				FA2670B9241E965800899E5E /* Products */,
+				FA267136241F4CA100899E5E /* Frameworkds */,
+				FA267140241F4CB500899E5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +254,30 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FA267136241F4CA100899E5E /* Frameworkds */ = {
+			isa = PBXGroup;
+			children = (
+				FA267137241F4CA500899E5E /* APIKit.xcodeproj */,
+			);
+			name = Frameworkds;
+			sourceTree = "<group>";
+		};
+		FA267138241F4CA500899E5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA26713D241F4CA500899E5E /* APIKit.framework */,
+				FA26713F241F4CA500899E5E /* APIKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA267140241F4CB500899E5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -242,6 +300,7 @@
 				FA2670B4241E965800899E5E /* Sources */,
 				FA2670B5241E965800899E5E /* Frameworks */,
 				FA2670B6241E965800899E5E /* Resources */,
+				FA267143241F4CB500899E5E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +359,12 @@
 			mainGroup = FA2670AE241E965800899E5E;
 			productRefGroup = FA2670B9241E965800899E5E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA267138241F4CA500899E5E /* Products */;
+					ProjectRef = FA267137241F4CA500899E5E /* APIKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FA2670B7241E965800899E5E /* Pixela */,
@@ -307,6 +372,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FA26713D241F4CA500899E5E /* APIKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = APIKit.framework;
+			remoteRef = FA26713C241F4CA500899E5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA26713F241F4CA500899E5E /* APIKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = APIKitTests.xctest;
+			remoteRef = FA26713E241F4CA500899E5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FA2670B6241E965800899E5E /* Resources */ = {
