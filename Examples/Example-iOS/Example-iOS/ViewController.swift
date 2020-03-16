@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pixela
 
 class ViewController: UIViewController {
 

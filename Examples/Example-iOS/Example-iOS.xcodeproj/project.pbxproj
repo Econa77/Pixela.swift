@@ -13,7 +13,40 @@
 		FA26711E241F4BC100899E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA26711C241F4BC100899E5E /* Main.storyboard */; };
 		FA267120241F4BC200899E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA26711F241F4BC200899E5E /* Assets.xcassets */; };
 		FA267123241F4BC200899E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA267121241F4BC200899E5E /* LaunchScreen.storyboard */; };
+		FA267150241F4DFF00899E5E /* Pixela.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA26714C241F4DF900899E5E /* Pixela.framework */; };
+		FA267151241F4DFF00899E5E /* Pixela.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA26714C241F4DF900899E5E /* Pixela.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA26714B241F4DF900899E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA267145241F4DF900899E5E /* Pixela.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA2670B8241E965800899E5E;
+			remoteInfo = Pixela;
+		};
+		FA26714D241F4DF900899E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA267145241F4DF900899E5E /* Pixela.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA2670C1241E965800899E5E;
+			remoteInfo = PixelaTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA267152241F4DFF00899E5E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA267151241F4DFF00899E5E /* Pixela.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA267113241F4BC100899E5E /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +57,7 @@
 		FA26711F241F4BC200899E5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA267122241F4BC200899E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA267124241F4BC200899E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA267145241F4DF900899E5E /* Pixela.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pixela.xcodeproj; path = ../../Pixela.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA267150241F4DFF00899E5E /* Pixela.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +77,8 @@
 			children = (
 				FA267115241F4BC100899E5E /* Example-iOS */,
 				FA267114241F4BC100899E5E /* Products */,
+				FA267144241F4DEC00899E5E /* Frameworkds */,
+				FA26714F241F4DFF00899E5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +104,30 @@
 			path = "Example-iOS";
 			sourceTree = "<group>";
 		};
+		FA267144241F4DEC00899E5E /* Frameworkds */ = {
+			isa = PBXGroup;
+			children = (
+				FA267145241F4DF900899E5E /* Pixela.xcodeproj */,
+			);
+			name = Frameworkds;
+			sourceTree = "<group>";
+		};
+		FA267146241F4DF900899E5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA26714C241F4DF900899E5E /* Pixela.framework */,
+				FA26714E241F4DF900899E5E /* PixelaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA26714F241F4DFF00899E5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +138,7 @@
 				FA26710F241F4BC100899E5E /* Sources */,
 				FA267110241F4BC100899E5E /* Frameworks */,
 				FA267111241F4BC100899E5E /* Resources */,
+				FA267152241F4DFF00899E5E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +175,35 @@
 			mainGroup = FA26710A241F4BC100899E5E;
 			productRefGroup = FA267114241F4BC100899E5E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FA267146241F4DF900899E5E /* Products */;
+					ProjectRef = FA267145241F4DF900899E5E /* Pixela.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FA267112241F4BC100899E5E /* Example-iOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FA26714C241F4DF900899E5E /* Pixela.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pixela.framework;
+			remoteRef = FA26714B241F4DF900899E5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FA26714E241F4DF900899E5E /* PixelaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PixelaTests.xctest;
+			remoteRef = FA26714D241F4DF900899E5E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FA267111241F4BC100899E5E /* Resources */ = {
