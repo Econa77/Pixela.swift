@@ -115,6 +115,12 @@ public extension Graph {
 }
 
 public extension Graph {
+    enum Appearance: String {
+        case dark
+    }
+}
+
+public extension Graph {
     struct Statistics: Decodable {
 
         // MARK: - Properties
