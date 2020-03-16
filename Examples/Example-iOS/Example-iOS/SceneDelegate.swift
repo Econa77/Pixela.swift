@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Example-iOS
 //
-//  Created by 古林俊佑 on 2020/03/13.
+//  Created by 古林俊佑 on 2020/03/16.
 //  Copyright © 2020 ShunsukeFurubayashi. All rights reserved.
 //
 
