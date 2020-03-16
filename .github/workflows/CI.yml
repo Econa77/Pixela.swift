@@ -21,9 +21,6 @@ jobs:
     
     - name: Select Xcode
       run: sudo xcode-select -s /Applications/Xcode_11.3.1.app
-  
-    - name: Generate Xcode Project
-      run: swift package generate-xcodeproj
 
     - name: Build and Test
       run: |
@@ -36,6 +33,6 @@ jobs:
           -configuration Debug | xcpretty -c;
       env:
         PROJECT: Pixela.xcodeproj
-        SCHEME: Pixela-Package
+        SCHEME: Pixela
         SDK: ${{ matrix.env.sdk }}
         DESTINATION: ${{ matrix.env.destination }}

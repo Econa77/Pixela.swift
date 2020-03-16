@@ -45,9 +45,6 @@ jobs:
         brew install mint
         mint bootstrap --link
 
-    - name: Generate Xcode Project
-      run: swift package generate-xcodeproj
-      
     - name: Run Danger
       run: bundle exec danger
       env:
