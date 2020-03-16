@@ -68,7 +68,7 @@ All errors in the library will return a `PixelaError`. `PixelaError` is the next
 
 # Contributing
 1. Fork it ( https://github.com/Econa77/Pixela.swift/fork )
-2. Generate Pixela.xcodeproj (`swift package generate-xcodeproj`)
+2. Update git submodule (`carthage checkout --no-build --use-submodules` or `git submodule init && git submodule update`)
 3. Create your feature branch (`git checkout -b my-new-feature`)
 4. Commit your changes (`git commit -am 'Add some feature'`)
 5. Push to the branch (`git push origin my-new-feature`)
