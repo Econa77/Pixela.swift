@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA2670C2241E965800899E5E /* Pixela.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2670B8241E965800899E5E /* Pixela.framework */; };
+		FA2670C7241E965800899E5E /* PixelaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670C6241E965800899E5E /* PixelaTests.swift */; };
+		FA2670C9241E965800899E5E /* Pixela.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2670BB241E965800899E5E /* Pixela.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA2670E1241F4A3900899E5E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670DE241F4A3900899E5E /* Configuration.swift */; };
+		FA2670E2241F4A3900899E5E /* Pixela.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670DF241F4A3900899E5E /* Pixela.swift */; };
+		FA2670E3241F4A3900899E5E /* PixelaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E0241F4A3900899E5E /* PixelaError.swift */; };
+		FA2670F0241F4A4A00899E5E /* PixelaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E5241F4A4A00899E5E /* PixelaAPI.swift */; };
+		FA2670F1241F4A4A00899E5E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E6241F4A4A00899E5E /* APIClient.swift */; };
+		FA2670F2241F4A4A00899E5E /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E7241F4A4A00899E5E /* DecodableDataParser.swift */; };
+		FA2670F3241F4A4A00899E5E /* UsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E9241F4A4A00899E5E /* UsersRequest.swift */; };
+		FA2670F4241F4A4A00899E5E /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EA241F4A4A00899E5E /* NotificationsRequest.swift */; };
+		FA2670F5241F4A4A00899E5E /* GraphsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EB241F4A4A00899E5E /* GraphsRequest.swift */; };
+		FA2670F6241F4A4A00899E5E /* ChannelsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EC241F4A4A00899E5E /* ChannelsRequest.swift */; };
+		FA2670F7241F4A4A00899E5E /* PixelsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670ED241F4A4A00899E5E /* PixelsRequest.swift */; };
+		FA2670F8241F4A4A00899E5E /* WebhooksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EE241F4A4A00899E5E /* WebhooksRequest.swift */; };
+		FA2670F9241F4A4A00899E5E /* PixelaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EF241F4A4A00899E5E /* PixelaRequest.swift */; };
+		FA267101241F4A5400899E5E /* Webhook.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FB241F4A5400899E5E /* Webhook.swift */; };
+		FA267102241F4A5400899E5E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FC241F4A5400899E5E /* Channel.swift */; };
+		FA267103241F4A5400899E5E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FD241F4A5400899E5E /* Graph.swift */; };
+		FA267104241F4A5400899E5E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FE241F4A5400899E5E /* Notification.swift */; };
+		FA267105241F4A5400899E5E /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FF241F4A5400899E5E /* Pixel.swift */; };
+		FA267106241F4A5400899E5E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267100241F4A5400899E5E /* ErrorMessage.swift */; };
+		FA267109241F4A5800899E5E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267108241F4A5800899E5E /* DateExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA2670C3241E965800899E5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2670AF241E965800899E5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA2670B7241E965800899E5E;
+			remoteInfo = Pixela;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA2670B8241E965800899E5E /* Pixela.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pixela.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2670BB241E965800899E5E /* Pixela.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pixela.h; sourceTree = "<group>"; };
+		FA2670BC241E965800899E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2670C1241E965800899E5E /* PixelaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2670C6241E965800899E5E /* PixelaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelaTests.swift; sourceTree = "<group>"; };
+		FA2670C8241E965800899E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2670D7241F3B3100899E5E /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		FA2670D8241F3B3C00899E5E /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		FA2670D9241F3B4500899E5E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		FA2670DA241F3B4F00899E5E /* Pixela.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Pixela.xcconfig; sourceTree = "<group>"; };
+		FA2670DB241F3B5800899E5E /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		FA2670DE241F4A3900899E5E /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		FA2670DF241F4A3900899E5E /* Pixela.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixela.swift; sourceTree = "<group>"; };
+		FA2670E0241F4A3900899E5E /* PixelaError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelaError.swift; sourceTree = "<group>"; };
+		FA2670E5241F4A4A00899E5E /* PixelaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelaAPI.swift; sourceTree = "<group>"; };
+		FA2670E6241F4A4A00899E5E /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FA2670E7241F4A4A00899E5E /* DecodableDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
+		FA2670E9241F4A4A00899E5E /* UsersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRequest.swift; sourceTree = "<group>"; };
+		FA2670EA241F4A4A00899E5E /* NotificationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
+		FA2670EB241F4A4A00899E5E /* GraphsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsRequest.swift; sourceTree = "<group>"; };
+		FA2670EC241F4A4A00899E5E /* ChannelsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsRequest.swift; sourceTree = "<group>"; };
+		FA2670ED241F4A4A00899E5E /* PixelsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelsRequest.swift; sourceTree = "<group>"; };
+		FA2670EE241F4A4A00899E5E /* WebhooksRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebhooksRequest.swift; sourceTree = "<group>"; };
+		FA2670EF241F4A4A00899E5E /* PixelaRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelaRequest.swift; sourceTree = "<group>"; };
+		FA2670FB241F4A5400899E5E /* Webhook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webhook.swift; sourceTree = "<group>"; };
+		FA2670FC241F4A5400899E5E /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		FA2670FD241F4A5400899E5E /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		FA2670FE241F4A5400899E5E /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		FA2670FF241F4A5400899E5E /* Pixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
+		FA267100241F4A5400899E5E /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		FA267108241F4A5800899E5E /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA2670B5241E965800899E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2670BE241E965800899E5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2670C2241E965800899E5E /* Pixela.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA2670AE241E965800899E5E = {
+			isa = PBXGroup;
+			children = (
+				FA2670D2241E967900899E5E /* Sources */,
+				FA2670D4241E96A200899E5E /* Tests */,
+				FA2670D6241E96CB00899E5E /* Configurations */,
+				FA2670B9241E965800899E5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2670B9241E965800899E5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670B8241E965800899E5E /* Pixela.framework */,
+				FA2670C1241E965800899E5E /* PixelaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2670D2241E967900899E5E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670D3241E968100899E5E /* Pixela */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FA2670D3241E968100899E5E /* Pixela */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670DE241F4A3900899E5E /* Configuration.swift */,
+				FA2670DF241F4A3900899E5E /* Pixela.swift */,
+				FA2670E0241F4A3900899E5E /* PixelaError.swift */,
+				FA267107241F4A5800899E5E /* Extensions */,
+				FA2670FA241F4A5400899E5E /* Entities */,
+				FA2670E4241F4A4A00899E5E /* API */,
+				FA2670DD241F4A2500899E5E /* Supporting Files */,
+			);
+			path = Pixela;
+			sourceTree = "<group>";
+		};
+		FA2670D4241E96A200899E5E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670D5241E96AC00899E5E /* PixelaTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		FA2670D5241E96AC00899E5E /* PixelaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670C6241E965800899E5E /* PixelaTests.swift */,
+				FA2670C8241E965800899E5E /* Info.plist */,
+			);
+			path = PixelaTests;
+			sourceTree = "<group>";
+		};
+		FA2670D6241E96CB00899E5E /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670D7241F3B3100899E5E /* Base.xcconfig */,
+				FA2670D8241F3B3C00899E5E /* Debug.xcconfig */,
+				FA2670D9241F3B4500899E5E /* Release.xcconfig */,
+				FA2670DA241F3B4F00899E5E /* Pixela.xcconfig */,
+				FA2670DB241F3B5800899E5E /* Tests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		FA2670DD241F4A2500899E5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670BB241E965800899E5E /* Pixela.h */,
+				FA2670BC241E965800899E5E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA2670E4241F4A4A00899E5E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670E8241F4A4A00899E5E /* Requests */,
+				FA2670E6241F4A4A00899E5E /* APIClient.swift */,
+				FA2670E5241F4A4A00899E5E /* PixelaAPI.swift */,
+				FA2670EF241F4A4A00899E5E /* PixelaRequest.swift */,
+				FA2670E7241F4A4A00899E5E /* DecodableDataParser.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FA2670E8241F4A4A00899E5E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FA2670E9241F4A4A00899E5E /* UsersRequest.swift */,
+				FA2670EA241F4A4A00899E5E /* NotificationsRequest.swift */,
+				FA2670EB241F4A4A00899E5E /* GraphsRequest.swift */,
+				FA2670EC241F4A4A00899E5E /* ChannelsRequest.swift */,
+				FA2670ED241F4A4A00899E5E /* PixelsRequest.swift */,
+				FA2670EE241F4A4A00899E5E /* WebhooksRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		FA2670FA241F4A5400899E5E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FA267100241F4A5400899E5E /* ErrorMessage.swift */,
+				FA2670FC241F4A5400899E5E /* Channel.swift */,
+				FA2670FD241F4A5400899E5E /* Graph.swift */,
+				FA2670FF241F4A5400899E5E /* Pixel.swift */,
+				FA2670FE241F4A5400899E5E /* Notification.swift */,
+				FA2670FB241F4A5400899E5E /* Webhook.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FA267107241F4A5800899E5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA267108241F4A5800899E5E /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FA2670B3241E965800899E5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2670C9241E965800899E5E /* Pixela.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FA2670B7241E965800899E5E /* Pixela */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2670CC241E965800899E5E /* Build configuration list for PBXNativeTarget "Pixela" */;
+			buildPhases = (
+				FA2670B3241E965800899E5E /* Headers */,
+				FA2670B4241E965800899E5E /* Sources */,
+				FA2670B5241E965800899E5E /* Frameworks */,
+				FA2670B6241E965800899E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pixela;
+			productName = Pixela;
+			productReference = FA2670B8241E965800899E5E /* Pixela.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA2670C0241E965800899E5E /* PixelaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2670CF241E965800899E5E /* Build configuration list for PBXNativeTarget "PixelaTests" */;
+			buildPhases = (
+				FA2670BD241E965800899E5E /* Sources */,
+				FA2670BE241E965800899E5E /* Frameworks */,
+				FA2670BF241E965800899E5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA2670C4241E965800899E5E /* PBXTargetDependency */,
+			);
+			name = PixelaTests;
+			productName = PixelaTests;
+			productReference = FA2670C1241E965800899E5E /* PixelaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2670AF241E965800899E5E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = ShunsukeFurubayashi;
+				TargetAttributes = {
+					FA2670B7241E965800899E5E = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					FA2670C0241E965800899E5E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FA2670B2241E965800899E5E /* Build configuration list for PBXProject "Pixela" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA2670AE241E965800899E5E;
+			productRefGroup = FA2670B9241E965800899E5E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA2670B7241E965800899E5E /* Pixela */,
+				FA2670C0241E965800899E5E /* PixelaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA2670B6241E965800899E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2670BF241E965800899E5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA2670B4241E965800899E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2670F4241F4A4A00899E5E /* NotificationsRequest.swift in Sources */,
+				FA267109241F4A5800899E5E /* DateExtension.swift in Sources */,
+				FA267102241F4A5400899E5E /* Channel.swift in Sources */,
+				FA2670F7241F4A4A00899E5E /* PixelsRequest.swift in Sources */,
+				FA2670E2241F4A3900899E5E /* Pixela.swift in Sources */,
+				FA267105241F4A5400899E5E /* Pixel.swift in Sources */,
+				FA2670E1241F4A3900899E5E /* Configuration.swift in Sources */,
+				FA2670F3241F4A4A00899E5E /* UsersRequest.swift in Sources */,
+				FA2670F2241F4A4A00899E5E /* DecodableDataParser.swift in Sources */,
+				FA2670F6241F4A4A00899E5E /* ChannelsRequest.swift in Sources */,
+				FA267103241F4A5400899E5E /* Graph.swift in Sources */,
+				FA267101241F4A5400899E5E /* Webhook.swift in Sources */,
+				FA2670F8241F4A4A00899E5E /* WebhooksRequest.swift in Sources */,
+				FA2670F9241F4A4A00899E5E /* PixelaRequest.swift in Sources */,
+				FA2670E3241F4A3900899E5E /* PixelaError.swift in Sources */,
+				FA2670F5241F4A4A00899E5E /* GraphsRequest.swift in Sources */,
+				FA2670F1241F4A4A00899E5E /* APIClient.swift in Sources */,
+				FA2670F0241F4A4A00899E5E /* PixelaAPI.swift in Sources */,
+				FA267106241F4A5400899E5E /* ErrorMessage.swift in Sources */,
+				FA267104241F4A5400899E5E /* Notification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA2670BD241E965800899E5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2670C7241E965800899E5E /* PixelaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA2670C4241E965800899E5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA2670B7241E965800899E5E /* Pixela */;
+			targetProxy = FA2670C3241E965800899E5E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA2670CA241E965800899E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2670D8241F3B3C00899E5E /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FA2670CB241E965800899E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2670D9241F3B4500899E5E /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		FA2670CD241E965800899E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2670DA241F3B4F00899E5E /* Pixela.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA2670CE241E965800899E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2670DA241F3B4F00899E5E /* Pixela.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FA2670D0241E965800899E5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2670DB241F3B5800899E5E /* Tests.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA2670D1241E965800899E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA2670DB241F3B5800899E5E /* Tests.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA2670B2241E965800899E5E /* Build configuration list for PBXProject "Pixela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2670CA241E965800899E5E /* Debug */,
+				FA2670CB241E965800899E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2670CC241E965800899E5E /* Build configuration list for PBXNativeTarget "Pixela" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2670CD241E965800899E5E /* Debug */,
+				FA2670CE241E965800899E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2670CF241E965800899E5E /* Build configuration list for PBXNativeTarget "PixelaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2670D0241E965800899E5E /* Debug */,
+				FA2670D1241E965800899E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA2670AF241E965800899E5E /* Project object */;
+}
