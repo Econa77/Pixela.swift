@@ -22,7 +22,7 @@ extension PixelaRequest {
 extension PixelaRequest {
     func intercept(urlRequest: URLRequest) throws -> URLRequest {
         var urlRequest = urlRequest
-        urlRequest.setValue("Pixela.swift(https://github.com/Econa77/Pixela.swift)", forHTTPHeaderField: "User-Agent")
+        urlRequest.setValue(Pixela.userAgent, forHTTPHeaderField: "User-Agent")
         return urlRequest
     }
 

@@ -14,6 +14,7 @@ public final class Pixela {
     public static var shared: Pixela = {
         return Pixela(configuration: nil)
     }()
+    public static var userAgent = "Pixela.swift(https://github.com/Econa77/Pixela.swift)"
 
     public var configuration: Configuration?
     private let apiClient: APIClient
