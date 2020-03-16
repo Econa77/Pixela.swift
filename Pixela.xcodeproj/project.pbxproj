@@ -135,7 +135,6 @@
 				FA2670D6241E96CB00899E5E /* Configurations */,
 				FA2670B9241E965800899E5E /* Products */,
 				FA267136241F4CA100899E5E /* Frameworkds */,
-				FA267140241F4CB500899E5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,13 +268,6 @@
 				FA26713F241F4CA500899E5E /* APIKitTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FA267140241F4CB500899E5E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
