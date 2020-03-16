@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/github/license/Econa77/Pixela.swift.svg)](https://github.com/Econa77/Pixela.swift/blob/master/LICENSE)
 [![Version](https://img.shields.io/cocoapods/v/Pixela.svg)](http://cocoadocs.org/docsets/Pixela)
 [![Platform](https://img.shields.io/cocoapods/p/Pixela.svg)](http://cocoadocs.org/docsets/Pixela)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM supported](https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat)](https://swift.org/package-manager)
 
 [Pixela](https://pixe.la/) API client for Swift.
