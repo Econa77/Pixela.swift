@@ -27,7 +27,7 @@ jobs:
     - name: Build and Test
       run: |
         set -o pipefail
-        xcodebuild build-for-testing \
+        xcodebuild build-for-testing test-without-building \
           -workspace "$PROJECT" \
           -scheme "$SCHEME" \
           -sdk "$SDK" \

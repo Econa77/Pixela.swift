@@ -108,21 +108,27 @@ public extension Pixela {
         }
     }
 
-    func getGraphSVGURL(id: String, date: Date?, mode: Graph.SVGMode?) -> URL {
+    func getGraphSVGURL(id: String, date: Date?, mode: Graph.SVGMode?, appearance: Graph.Appearance?) -> URL {
         let configuration = fetchConfiguration()
-        return getGraphSVGURL(username: configuration.username, id: id, date: date, mode: mode)
+        return getGraphSVGURL(username: configuration.username, id: id, date: date, mode: mode, appearance: appearance)
     }
 
-    func getGraphSVGURL(username: String, id: String, date: Date?, mode: Graph.SVGMode?) -> URL {
-        if let date = date, let mode = mode {
-            return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id)?date=\(date.formatString())&mode=\(mode.rawValue)")!
-        } else if let date = date {
-            return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id)?date=\(date.formatString())")!
-        } else if let mode = mode {
-            return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id)?mode=\(mode.rawValue)")!
-        } else {
-            return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id)")!
+    func getGraphSVGURL(username: String, id: String, date: Date?, mode: Graph.SVGMode?, appearance: Graph.Appearance?) -> URL {
+        var components = URLComponents(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id)")
+        var queryItems = [URLQueryItem]()
+        if let date = date {
+            queryItems.append(URLQueryItem(name: "date", value: date.formatString()))
         }
+        if let mode = mode {
+            queryItems.append(URLQueryItem(name: "mode", value: mode.rawValue))
+        }
+        if let appearance = appearance {
+            queryItems.append(URLQueryItem(name: "appearance", value: appearance.rawValue))
+        }
+        if !queryItems.isEmpty {
+            components?.queryItems = queryItems
+        }
+        return components?.url ?? URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id)")!
     }
 
     func updateGraph(id: String, name: String?, unit: String?, color: Graph.Color?, timeZone: TimeZone?, purgeCacheURLs: [URL]?, selfSufficient: Graph.SelfSufficient?, isSecret: Bool?, isPublishOptionalData: Bool?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
@@ -143,11 +149,15 @@ public extension Pixela {
     }
 
     func getGraphHTMLURL(username: String, id: String, mode: Graph.HTMLMode?) -> URL {
+        var components = URLComponents(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id).html")
+        var queryItems = [URLQueryItem]()
         if let mode = mode {
-            return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id).html?mode=\(mode.rawValue)")!
-        } else {
-            return URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id).html")!
+            queryItems.append(URLQueryItem(name: "mode", value: mode.rawValue))
         }
+        if !queryItems.isEmpty {
+            components?.queryItems = queryItems
+        }
+        return components?.url ?? URL(string: "\(PixelaAPI.baseURLString)/v1/users/\(username)/graphs/\(id).html")!
     }
 
     func getGraphsHTMLURL() -> URL {

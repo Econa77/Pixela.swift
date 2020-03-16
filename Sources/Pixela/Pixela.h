@@ -2,7 +2,7 @@
 //  Pixela.h
 //  Pixela
 //
-//  Created by 古林俊佑 on 2020/03/16.
+//  Created by Shunsuke Furubayashi on 2020/03/16.
 //  Copyright © 2020 ShunsukeFurubayashi. All rights reserved.
 //
 
