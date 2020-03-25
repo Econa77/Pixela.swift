@@ -32,7 +32,7 @@ public struct APIConfiguration {
     }()
 
     // MARK: - Initialize
-    init(baseURL: URL = URL(string: "https://pixe.la")!, userAgent: String = "Pixela.swift(https://github.com/Econa77/Pixela.swift)") {
+    public init(baseURL: URL = URL(string: "https://pixe.la")!, userAgent: String = "Pixela.swift(https://github.com/Econa77/Pixela.swift)") {
         self.baseURL = baseURL
         self.userAgent = userAgent
     }
