@@ -60,6 +60,16 @@ let user2 = Pixela(configuration: nil)
 user2.configuration = Configuration(username: "user2", token: "user2-secret-token")
 ```
 
+## Enterprise support
+Change `APIConfiguration` to connect to the Enterprise version of Pixela.
+
+```
+Pixela.shared.apiConfiguration = APIConfiguration(baseURL: URL(string: "https://custom.pixe.la")!)
+
+let pixela = Pixela(configuration: Configuration(username: "user1", token: "user1-secret-token"))
+pixela.apiConfiguration = APIConfiguration(baseURL: URL(string: "https://custom-domain-pixela.com")!)
+```
+
 ## Error cases
 All errors in the library will return a `PixelaError`. `PixelaError` is the next 3 cases:
 
