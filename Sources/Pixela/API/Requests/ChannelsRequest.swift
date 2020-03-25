@@ -14,6 +14,7 @@ extension PixelaAPI {
     struct CreateChannelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
         let name: String
@@ -55,6 +56,7 @@ extension PixelaAPI {
     struct GetChannelsRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
 
         // MARK: - Request Type
@@ -82,6 +84,7 @@ extension PixelaAPI {
     struct UpdateChannelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
         let name: String?
@@ -120,6 +123,7 @@ extension PixelaAPI {
     struct DeleteChannelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
 

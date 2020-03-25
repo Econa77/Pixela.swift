@@ -14,6 +14,7 @@ extension PixelaAPI {
     struct CreateUserRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let token: String
         let username: String
         let isAgreeTermsOfService: Bool
@@ -45,6 +46,7 @@ extension PixelaAPI {
     struct UpdateUserRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let newToken: String?
         let thanksCode: String?
@@ -76,6 +78,7 @@ extension PixelaAPI {
     struct DeleteUserRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
 
         // MARK: - Response Type

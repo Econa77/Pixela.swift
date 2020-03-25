@@ -14,6 +14,7 @@ extension PixelaAPI {
     struct CreateWebhookRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let type: Webhook.WebhookType
@@ -49,6 +50,7 @@ extension PixelaAPI {
     struct GetWebhooksRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
 
         // MARK: - Request Type
@@ -76,6 +78,7 @@ extension PixelaAPI {
     struct InvokeWebhookRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let webhookHash: String
 
@@ -96,6 +99,7 @@ extension PixelaAPI {
     struct DeleteWebhookRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let webhookHash: String
 

@@ -20,3 +20,21 @@ public struct Configuration {
     }
 
 }
+
+public struct APIConfiguration {
+
+    // MARK: - Properties
+    public let baseURL: URL
+    public let userAgent: String
+
+    public static var `default`: APIConfiguration = {
+        return APIConfiguration()
+    }()
+
+    // MARK: - Initialize
+    public init(baseURL: URL = URL(string: "https://pixe.la")!, userAgent: String = "Pixela.swift(https://github.com/Econa77/Pixela.swift)") {
+        self.baseURL = baseURL
+        self.userAgent = userAgent
+    }
+
+}

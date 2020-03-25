@@ -8,21 +8,23 @@
 import Foundation
 import APIKit
 
-protocol PixelaRequest: Request {}
+protocol PixelaRequest: Request {
+    var apiConfiguration: APIConfiguration { get }
+}
 
 extension PixelaRequest {
     var dataParser: DataParser {
         return DecodableDataParser()
     }
     var baseURL: URL {
-        return URL(string: PixelaAPI.baseURLString)!
+        return apiConfiguration.baseURL
     }
 }
 
 extension PixelaRequest {
     func intercept(urlRequest: URLRequest) throws -> URLRequest {
         var urlRequest = urlRequest
-        urlRequest.setValue(Pixela.userAgent, forHTTPHeaderField: "User-Agent")
+        urlRequest.setValue(apiConfiguration.userAgent, forHTTPHeaderField: "User-Agent")
         return urlRequest
     }
 
