@@ -14,6 +14,7 @@ extension PixelaAPI {
     struct CreateNotificationRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let id: String
@@ -54,6 +55,7 @@ extension PixelaAPI {
     struct GetNotificationsRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
 
@@ -82,6 +84,7 @@ extension PixelaAPI {
     struct UpdateNotificationRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let id: String
@@ -117,6 +120,7 @@ extension PixelaAPI {
     struct DeleteNotificationRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let id: String

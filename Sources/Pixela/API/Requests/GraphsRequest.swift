@@ -14,6 +14,7 @@ extension PixelaAPI {
     struct CreateGraphRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
         let name: String
@@ -59,6 +60,7 @@ extension PixelaAPI {
     struct GetGraphsRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
 
         // MARK: - Request Type
@@ -86,6 +88,7 @@ extension PixelaAPI {
     struct UpdateGraphRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
         let name: String?
@@ -126,6 +129,7 @@ extension PixelaAPI {
     struct DeleteGraphRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
 
@@ -146,6 +150,7 @@ extension PixelaAPI {
     struct GetGraphPixelsRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
         let from: Date?
@@ -182,6 +187,7 @@ extension PixelaAPI {
     struct GetGraphStatisticsRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let id: String
 

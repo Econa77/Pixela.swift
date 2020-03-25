@@ -14,6 +14,7 @@ extension PixelaAPI {
     struct RecordPixelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let date: Date
@@ -53,6 +54,7 @@ extension PixelaAPI {
     struct GetPixelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let date: Date
@@ -74,6 +76,7 @@ extension PixelaAPI {
     struct UpdatePixelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let date: Date
@@ -105,6 +108,7 @@ extension PixelaAPI {
     struct IncrementPixelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
 
@@ -126,6 +130,7 @@ extension PixelaAPI {
     struct DecrementPixelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
 
@@ -147,6 +152,7 @@ extension PixelaAPI {
     struct DeletePixelRequest: PixelaRequest {
 
         // MARK: - Properties
+        let apiConfiguration: APIConfiguration
         let configuration: Configuration
         let graphID: String
         let date: Date
