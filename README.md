@@ -36,7 +36,7 @@ Pixela.shared.createUser(token: "secret-token", username: "username", isAgreeTer
 ```
 
 ## Other APIs
-This library supports all [Pixela](https://pixe.la/) API as of March 16, 2020. Check here for a list of Pixela APIs. (https://docs.pixe.la/)
+This library supports all [Pixela](https://pixe.la/) API as of April 4, 2020. Check here for a list of Pixela APIs. (https://docs.pixe.la/)
 
 ```swift
 Pixela.shared.configuration = Configuration(username: "username", token: "secret-token")
