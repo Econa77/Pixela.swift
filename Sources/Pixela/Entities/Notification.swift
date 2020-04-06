@@ -51,7 +51,7 @@ public struct Notification: Decodable {
         self.target = target
         self.condition = condition
         self.threshold = threshold
-        self.remindBy = remindBy
+        self.remindBy = (remindBy == nil || remindBy?.isEmpty == true) ? nil : remindBy
         self.channelID = channelID
     }
 
