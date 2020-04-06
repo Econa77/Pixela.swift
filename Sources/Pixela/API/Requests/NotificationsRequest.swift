@@ -22,6 +22,7 @@ extension PixelaAPI {
         let target: Notification.Target
         let condition: Notification.Condition
         let threshold: String
+        let remindBy: String?
         let channelID: String
 
         // MARK: - Request Type
@@ -38,6 +39,7 @@ extension PixelaAPI {
             params["target"] = target.rawValue
             params["condition"] = condition.rawValue
             params["threshold"] = threshold
+            params["remindBy"] = remindBy
             params["channelID"] = channelID
             return params
         }
@@ -46,7 +48,7 @@ extension PixelaAPI {
         }
 
         func response(from object: Any, urlResponse: HTTPURLResponse) throws -> Notification {
-            return Notification(id: id, name: name, target: target, condition: condition, threshold: threshold, channelID: channelID)
+            return Notification(id: id, name: name, target: target, condition: condition, threshold: threshold, remindBy: remindBy, channelID: channelID)
         }
 
     }
@@ -92,6 +94,7 @@ extension PixelaAPI {
         let target: Notification.Target?
         let condition: Notification.Condition?
         let threshold: String?
+        let remindBy: String?
         let channelID: String?
 
         // MARK: - Request Type
@@ -107,6 +110,7 @@ extension PixelaAPI {
             params["target"] = target?.rawValue
             params["condition"] = condition?.rawValue
             params["threshold"] = threshold
+            params["remindBy"] = remindBy
             params["channelID"] = channelID
             return params
         }
