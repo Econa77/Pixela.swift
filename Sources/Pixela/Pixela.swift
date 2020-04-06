@@ -307,7 +307,7 @@ public extension Pixela {
 
 // MARK: - Notifications Request
 public extension Pixela {
-    func createNotification(graphID: String, id: String, name: String, target: Notification.Target, condition: Notification.Condition, threshold: String, channelID: String, completion: @escaping ((Result<Notification, PixelaError>) -> Void)) {
+    func createNotification(graphID: String, id: String, name: String, target: Notification.Target, condition: Notification.Condition, threshold: String, remindBy: String?, channelID: String, completion: @escaping ((Result<Notification, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.CreateNotificationRequest(apiConfiguration: apiConfiguration,
                                                           configuration: configuration,
@@ -317,6 +317,7 @@ public extension Pixela {
                                                           target: target,
                                                           condition: condition,
                                                           threshold: threshold,
+                                                          remindBy: remindBy,
                                                           channelID: channelID)
         apiClient.send(request, completion: completion)
     }
@@ -336,7 +337,7 @@ public extension Pixela {
         }
     }
 
-    func updateNotification(graphID: String, id: String, name: String?, target: Notification.Target?, condition: Notification.Condition?, threshold: String?, channelID: String?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
+    func updateNotification(graphID: String, id: String, name: String?, target: Notification.Target?, condition: Notification.Condition?, threshold: String?, remindBy: String?, channelID: String?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
         let configuration = fetchConfiguration()
         let request = PixelaAPI.UpdateNotificationRequest(apiConfiguration: apiConfiguration,
                                                           configuration: configuration,
@@ -346,6 +347,7 @@ public extension Pixela {
                                                           target: target,
                                                           condition: condition,
                                                           threshold: threshold,
+                                                          remindBy: remindBy,
                                                           channelID: channelID)
         apiClient.send(request, completion: completion)
     }
