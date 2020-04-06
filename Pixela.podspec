@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Pixela"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "Pixela API client for Swift"
   s.homepage         = "https://github.com/Econa77/Pixela.swift"
   s.license          = { :type => "MIT", :file => "LICENSE" }
