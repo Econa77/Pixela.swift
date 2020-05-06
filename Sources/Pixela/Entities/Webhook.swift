@@ -27,5 +27,6 @@ public extension Webhook {
     enum WebhookType: String, Decodable {
         case increment
         case decrement
+        case stopwatch
     }
 }

@@ -34,7 +34,7 @@ extension PixelaRequest {
                 throw PixelaError.responseFailed(.unacceptableStatusCode(object, nil, urlResponse.statusCode))
             }
             let decoder = JSONDecoder()
-            let message = try? decoder.decode(ErrorMessage.self, from: data)
+            let message = try? decoder.decode(Message.self, from: data)
             throw PixelaError.responseFailed(.unacceptableStatusCode(object, message, urlResponse.statusCode))
         }
         return object

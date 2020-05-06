@@ -28,7 +28,7 @@
 		FA267103241F4A5400899E5E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FD241F4A5400899E5E /* Graph.swift */; };
 		FA267104241F4A5400899E5E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FE241F4A5400899E5E /* Notification.swift */; };
 		FA267105241F4A5400899E5E /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FF241F4A5400899E5E /* Pixel.swift */; };
-		FA267106241F4A5400899E5E /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267100241F4A5400899E5E /* ErrorMessage.swift */; };
+		FA267106241F4A5400899E5E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267100241F4A5400899E5E /* Message.swift */; };
 		FA267109241F4A5800899E5E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267108241F4A5800899E5E /* DateExtension.swift */; };
 		FA267141241F4CB500899E5E /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA26713D241F4CA500899E5E /* APIKit.framework */; };
 		FA267142241F4CB500899E5E /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA26713D241F4CA500899E5E /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -102,7 +102,7 @@
 		FA2670FD241F4A5400899E5E /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		FA2670FE241F4A5400899E5E /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		FA2670FF241F4A5400899E5E /* Pixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
-		FA267100241F4A5400899E5E /* ErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		FA267100241F4A5400899E5E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FA267108241F4A5800899E5E /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		FA267137241F4CA500899E5E /* APIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APIKit.xcodeproj; path = Carthage/Checkouts/APIKit/APIKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,7 +235,7 @@
 		FA2670FA241F4A5400899E5E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				FA267100241F4A5400899E5E /* ErrorMessage.swift */,
+				FA267100241F4A5400899E5E /* Message.swift */,
 				FA2670FC241F4A5400899E5E /* Channel.swift */,
 				FA2670FD241F4A5400899E5E /* Graph.swift */,
 				FA2670FF241F4A5400899E5E /* Pixel.swift */,
@@ -422,7 +422,7 @@
 				FA2670F5241F4A4A00899E5E /* GraphsRequest.swift in Sources */,
 				FA2670F1241F4A4A00899E5E /* APIClient.swift in Sources */,
 				FA2670F0241F4A4A00899E5E /* PixelaAPI.swift in Sources */,
-				FA267106241F4A5400899E5E /* ErrorMessage.swift in Sources */,
+				FA267106241F4A5400899E5E /* Message.swift in Sources */,
 				FA267104241F4A5400899E5E /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

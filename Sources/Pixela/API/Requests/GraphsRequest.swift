@@ -204,4 +204,26 @@ extension PixelaAPI {
 
     }
 
+    // @see https://docs.pixe.la/entry/post-stopwatch
+    struct SwitchGraphStopWatchRequest: PixelaRequest {
+
+        // MARK: - Properties
+        let apiConfiguration: APIConfiguration
+        let configuration: Configuration
+        let id: String
+
+        // MARK: - Request Type
+        typealias Response = Message
+
+        let method: HTTPMethod = .post
+        var path: String {
+            return "/v1/users/\(configuration.username)/graphs/\(id)/stopwatch"
+        }
+        var headerFields: [String: String] {
+            return ["X-USER-TOKEN": configuration.token,
+                    "Content-Length": "0"]
+        }
+
+    }
+
 }
