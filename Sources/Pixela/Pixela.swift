@@ -244,6 +244,14 @@ public extension Pixela {
                                                           id: id)
         apiClient.send(request, completion: completion)
     }
+
+    func switchGraphStopWatch(id: String, completion: @escaping ((Result<Message, PixelaError>) -> Void)) {
+        let configuration = fetchConfiguration()
+        let request = PixelaAPI.SwitchGraphStopWatchRequest(apiConfiguration: apiConfiguration,
+                                                            configuration: configuration,
+                                                            id: id)
+        apiClient.send(request, completion: completion)
+    }
 }
 
 // MARK: - Pixels Request
