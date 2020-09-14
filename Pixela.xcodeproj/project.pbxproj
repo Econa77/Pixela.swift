@@ -17,16 +17,12 @@
 		FA2670F1241F4A4A00899E5E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E6241F4A4A00899E5E /* APIClient.swift */; };
 		FA2670F2241F4A4A00899E5E /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E7241F4A4A00899E5E /* DecodableDataParser.swift */; };
 		FA2670F3241F4A4A00899E5E /* UsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670E9241F4A4A00899E5E /* UsersRequest.swift */; };
-		FA2670F4241F4A4A00899E5E /* NotificationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EA241F4A4A00899E5E /* NotificationsRequest.swift */; };
 		FA2670F5241F4A4A00899E5E /* GraphsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EB241F4A4A00899E5E /* GraphsRequest.swift */; };
-		FA2670F6241F4A4A00899E5E /* ChannelsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EC241F4A4A00899E5E /* ChannelsRequest.swift */; };
 		FA2670F7241F4A4A00899E5E /* PixelsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670ED241F4A4A00899E5E /* PixelsRequest.swift */; };
 		FA2670F8241F4A4A00899E5E /* WebhooksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EE241F4A4A00899E5E /* WebhooksRequest.swift */; };
 		FA2670F9241F4A4A00899E5E /* PixelaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670EF241F4A4A00899E5E /* PixelaRequest.swift */; };
 		FA267101241F4A5400899E5E /* Webhook.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FB241F4A5400899E5E /* Webhook.swift */; };
-		FA267102241F4A5400899E5E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FC241F4A5400899E5E /* Channel.swift */; };
 		FA267103241F4A5400899E5E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FD241F4A5400899E5E /* Graph.swift */; };
-		FA267104241F4A5400899E5E /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FE241F4A5400899E5E /* Notification.swift */; };
 		FA267105241F4A5400899E5E /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2670FF241F4A5400899E5E /* Pixel.swift */; };
 		FA267106241F4A5400899E5E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267100241F4A5400899E5E /* Message.swift */; };
 		FA267109241F4A5800899E5E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA267108241F4A5800899E5E /* DateExtension.swift */; };
@@ -91,16 +87,12 @@
 		FA2670E6241F4A4A00899E5E /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		FA2670E7241F4A4A00899E5E /* DecodableDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
 		FA2670E9241F4A4A00899E5E /* UsersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRequest.swift; sourceTree = "<group>"; };
-		FA2670EA241F4A4A00899E5E /* NotificationsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsRequest.swift; sourceTree = "<group>"; };
 		FA2670EB241F4A4A00899E5E /* GraphsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphsRequest.swift; sourceTree = "<group>"; };
-		FA2670EC241F4A4A00899E5E /* ChannelsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelsRequest.swift; sourceTree = "<group>"; };
 		FA2670ED241F4A4A00899E5E /* PixelsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelsRequest.swift; sourceTree = "<group>"; };
 		FA2670EE241F4A4A00899E5E /* WebhooksRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebhooksRequest.swift; sourceTree = "<group>"; };
 		FA2670EF241F4A4A00899E5E /* PixelaRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelaRequest.swift; sourceTree = "<group>"; };
 		FA2670FB241F4A5400899E5E /* Webhook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Webhook.swift; sourceTree = "<group>"; };
-		FA2670FC241F4A5400899E5E /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		FA2670FD241F4A5400899E5E /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
-		FA2670FE241F4A5400899E5E /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		FA2670FF241F4A5400899E5E /* Pixel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
 		FA267100241F4A5400899E5E /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FA267108241F4A5800899E5E /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -223,9 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2670E9241F4A4A00899E5E /* UsersRequest.swift */,
-				FA2670EA241F4A4A00899E5E /* NotificationsRequest.swift */,
 				FA2670EB241F4A4A00899E5E /* GraphsRequest.swift */,
-				FA2670EC241F4A4A00899E5E /* ChannelsRequest.swift */,
 				FA2670ED241F4A4A00899E5E /* PixelsRequest.swift */,
 				FA2670EE241F4A4A00899E5E /* WebhooksRequest.swift */,
 			);
@@ -236,10 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				FA267100241F4A5400899E5E /* Message.swift */,
-				FA2670FC241F4A5400899E5E /* Channel.swift */,
 				FA2670FD241F4A5400899E5E /* Graph.swift */,
 				FA2670FF241F4A5400899E5E /* Pixel.swift */,
-				FA2670FE241F4A5400899E5E /* Notification.swift */,
 				FA2670FB241F4A5400899E5E /* Webhook.swift */,
 			);
 			path = Entities;
@@ -404,16 +392,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA2670F4241F4A4A00899E5E /* NotificationsRequest.swift in Sources */,
 				FA267109241F4A5800899E5E /* DateExtension.swift in Sources */,
-				FA267102241F4A5400899E5E /* Channel.swift in Sources */,
 				FA2670F7241F4A4A00899E5E /* PixelsRequest.swift in Sources */,
 				FA2670E2241F4A3900899E5E /* Pixela.swift in Sources */,
 				FA267105241F4A5400899E5E /* Pixel.swift in Sources */,
 				FA2670E1241F4A3900899E5E /* Configuration.swift in Sources */,
 				FA2670F3241F4A4A00899E5E /* UsersRequest.swift in Sources */,
 				FA2670F2241F4A4A00899E5E /* DecodableDataParser.swift in Sources */,
-				FA2670F6241F4A4A00899E5E /* ChannelsRequest.swift in Sources */,
 				FA267103241F4A5400899E5E /* Graph.swift in Sources */,
 				FA267101241F4A5400899E5E /* Webhook.swift in Sources */,
 				FA2670F8241F4A4A00899E5E /* WebhooksRequest.swift in Sources */,
@@ -423,7 +408,6 @@
 				FA2670F1241F4A4A00899E5E /* APIClient.swift in Sources */,
 				FA2670F0241F4A4A00899E5E /* PixelaAPI.swift in Sources */,
 				FA267106241F4A5400899E5E /* Message.swift in Sources */,
-				FA267104241F4A5400899E5E /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
