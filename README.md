@@ -1,5 +1,5 @@
 # Pixela.swift
-[![Actions Status](https://github.com/Econa77/Pixela.swift/workflows/CI/badge.svg)](https://github.com/Econa77/Pixela.swift/actions)
+[![Actions Status](https://github.com/Econa77/Pixela.swift/workflows/Xcode-Build/badge.svg)](https://github.com/Econa77/Pixela.swift/actions)
 [![Release version](https://img.shields.io/github/release/Econa77/Pixela.swift.svg)](https://github.com/Econa77/Pixela.swift/releases/latest)
 [![License: MIT](https://img.shields.io/github/license/Econa77/Pixela.swift.svg)](https://github.com/Econa77/Pixela.swift/blob/master/LICENSE)
 [![Version](https://img.shields.io/cocoapods/v/Pixela.svg)](http://cocoadocs.org/docsets/Pixela)
