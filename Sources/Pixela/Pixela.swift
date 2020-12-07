@@ -64,51 +64,6 @@ public extension Pixela {
     }
 }
 
-// MARK: - Channels Request
-public extension Pixela {
-    func createChannel(id: String, name: String, type: Channel.ChannelType, completion: @escaping ((Result<Channel, PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.CreateChannelRequest(apiConfiguration: apiConfiguration,
-                                                     configuration: configuration,
-                                                     id: id,
-                                                     name: name,
-                                                     type: type)
-        apiClient.send(request, completion: completion)
-    }
-
-    func getChannels(completion: @escaping ((Result<[Channel], PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.GetChannelsRequest(apiConfiguration: apiConfiguration,
-                                                   configuration: configuration)
-        apiClient.send(request) { result in
-            switch result {
-            case let .success(response):
-                completion(.success(response.channels))
-            case let .failure(error):
-                completion(.failure(error))
-            }
-        }
-    }
-
-    func updateChannel(id: String, name: String?, type: Channel.ChannelType?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.UpdateChannelRequest(apiConfiguration: apiConfiguration,
-                                                     configuration: configuration,
-                                                     id: id,
-                                                     name: name,
-                                                     type: type)
-        apiClient.send(request, completion: completion)
-    }
-
-    func deleteChannel(id: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.DeleteChannelRequest(apiConfiguration: apiConfiguration,
-                                                     configuration: configuration,
-                                                     id: id)
-        apiClient.send(request, completion: completion)
-    }
-}
-
 // MARK: - Graphs Request
 public extension Pixela {
     func createGraph(id: String, name: String, unit: String, type: Graph.GraphType, color: Graph.Color, timeZone: TimeZone?, selfSufficient: Graph.SelfSufficient?, isSecret: Bool?, isPublishOptionalData: Bool?, completion: @escaping ((Result<Graph, PixelaError>) -> Void)) {
@@ -309,63 +264,6 @@ public extension Pixela {
                                                    configuration: configuration,
                                                    graphID: graphID,
                                                    date: date)
-        apiClient.send(request, completion: completion)
-    }
-}
-
-// MARK: - Notifications Request
-public extension Pixela {
-    func createNotification(graphID: String, id: String, name: String, target: Notification.Target, condition: Notification.Condition, threshold: String, remindBy: String?, channelID: String, completion: @escaping ((Result<Notification, PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.CreateNotificationRequest(apiConfiguration: apiConfiguration,
-                                                          configuration: configuration,
-                                                          graphID: graphID,
-                                                          id: id,
-                                                          name: name,
-                                                          target: target,
-                                                          condition: condition,
-                                                          threshold: threshold,
-                                                          remindBy: remindBy,
-                                                          channelID: channelID)
-        apiClient.send(request, completion: completion)
-    }
-
-    func getNotifications(graphID: String, completion: @escaping ((Result<[Notification], PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.GetNotificationsRequest(apiConfiguration: apiConfiguration,
-                                                        configuration: configuration,
-                                                        graphID: graphID)
-        apiClient.send(request) { result in
-            switch result {
-            case let .success(response):
-                completion(.success(response.notifications))
-            case let .failure(error):
-                completion(.failure(error))
-            }
-        }
-    }
-
-    func updateNotification(graphID: String, id: String, name: String?, target: Notification.Target?, condition: Notification.Condition?, threshold: String?, remindBy: String?, channelID: String?, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.UpdateNotificationRequest(apiConfiguration: apiConfiguration,
-                                                          configuration: configuration,
-                                                          graphID: graphID,
-                                                          id: id,
-                                                          name: name,
-                                                          target: target,
-                                                          condition: condition,
-                                                          threshold: threshold,
-                                                          remindBy: remindBy,
-                                                          channelID: channelID)
-        apiClient.send(request, completion: completion)
-    }
-
-    func deleteNotification(graphID: String, id: String, completion: @escaping ((Result<Void, PixelaError>) -> Void)) {
-        let configuration = fetchConfiguration()
-        let request = PixelaAPI.DeleteNotificationRequest(apiConfiguration: apiConfiguration,
-                                                          configuration: configuration,
-                                                          graphID: graphID,
-                                                          id: id)
         apiClient.send(request, completion: completion)
     }
 }
